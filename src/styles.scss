@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~@angular/material/grid-list/_grid-list-theme.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.row {
+  display: inline-flex;
+  width: 100%;
+  margin: 0 10px 0 10px
+}
+.mat-main-content {
+  width: 75%;
+  margin: 0 10px 0 10px
+}
+.mat-advertise {
+  width: 25%;
+  margin: 0 10px 0 10px
+}
+.mat-side-bar {
+  width: 25%;
+  margin: 0 10px 0 10px
+}
+.main-content {
+  width: 75%;
+  margin: 0 10px 0 10px
+}

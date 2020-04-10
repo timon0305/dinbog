@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Model</mat-card-subtitle>
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+    <mat-card-actions>
+      <div *ngFor="let item of ELEMENT_DATA">
+        <span class="name">{{item.name}}</span>
+        <span class="symbol">{{item.symbol}}</span>
+      </div>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>

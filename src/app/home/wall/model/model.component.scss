@@ -1,0 +1,36 @@
+.example-card {
+  max-width: 100%;
+}
+
+.example-header-image {
+  background-image: url('../../../../assets/avatar/avatar.jpg');
+  background-size: cover;
+  margin: auto;
+}
+mat-card-header {
+  display: block;
+  text-align: center;
+}
+mat-card-header>div {
+  width: 60px;
+  height: 60px;
+}
+mat-card-title {
+  margin-top: 10px;
+}
+mat-card-subtitle {
+  color: blue;
+}
+.name {
+  margin-bottom: 10px;
+}
+.symbol {
+  float: right;
+  color: blue;
+  margin-bottom: 10px;
+}
+mat-card-actions {
+  display: grid;
+  margin-left: 0;
+  margin-right: 0;
+}
