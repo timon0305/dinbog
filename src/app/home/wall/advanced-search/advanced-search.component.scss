@@ -10,3 +10,30 @@ mat-card-header {
 mat-card-actions {
   text-align: center;
 }
+
+mat-card-content {
+  width: 100%;
+  margin: auto;
+}
+mat-form-field {
+  width: 100%;
+  margin: auto;
+}
+.checkbox {
+  margin: auto;
+}
+.checkbox>mat-checkbox {
+  margin: 0 20px 0 20px;
+}
+.radio-group {
+  margin: auto;
+}
+.radio-group>mat-radio-group {
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+}
+.radio-group>mat-radio-group>mat-radio-button {
+  width: 30%;
+  margin: auto;
+}

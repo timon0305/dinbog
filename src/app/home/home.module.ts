@@ -13,6 +13,9 @@ import { AdvancedSearchComponent } from './wall/advanced-search/advanced-search.
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -23,14 +26,17 @@ import {MatInputModule} from '@angular/material/input';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    MatFormFieldModule,
     MatMenuModule,
     MatIconModule,
     MatCardModule,
     MatButtonModule,
     MatTableModule,
     MatSelectModule,
-    MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
+    MatRadioModule,
     RouterModule.forChild([
       {
         path: '',
