@@ -1,0 +1,214 @@
+#image {
+  text-align: center;
+}
+img {
+  height: 59px;
+  margin-top: 20px;
+}
+.mat-form-field {
+  margin-top: 16px;
+}
+
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.form_group {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+h3 {
+  color: blue;
+}
+
+button {
+  color: white;
+  background: blue;
+  padding: 0 40px 0 40px;
+}
+
+#dropzone {
+  text-align: center;
+  width : 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+#dropzone>ngx-dropzone {
+  border-radius: 50%;
+}
+
+#birthday_name {
+  margin-right: 20px;
+  font-size: 18px;
+  color: blue;
+}
+mat-form-field {
+  margin: 0 16px 0 16px;
+}
+
+#slide> span{
+  font-size: 18px;
+  color: blue;
+  margin-right: 18%;
+}
+#slide > mat-slide-toggle {
+  margin-left: 18%;
+}
+
+#gender>mat-form-field {
+  width: 48%;
+}
+
+#homeTown>mat-form-field {
+  width: 48%;
+}
+
+#homeTown>span {
+  width: 62%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+
+#Address>mat-form-field {
+  width: 48%;
+}
+
+#Address>span {
+  width: 62%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+
+#dropzone-4>div>span>ngx-dropzone {
+  width: 250px;
+  display: inline-block;
+
+}
+#dropzone-4>div>span {
+  padding: 20px;
+}
+
+#dropzone-4>div>span>ngx-dropzone>ngx-dropzone-label {
+  width: 250px;
+  display: block;
+  margin-top: 34%;
+}
+
+#Talent>mat-form-field {
+  width: 48%;
+}
+
+#Talent>span {
+  width: 62%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+#checkbox {
+  width: 57%;
+}
+#checkbox p {
+  width: 140%;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+}
+
+#Video_Upload_URL>mat-form-field {
+  width: 92%;
+}
+
+#Video_Upload_URL>span {
+  width: 100%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+
+.mat-tab-label-content {
+  color: blue;
+}
+mat-tab-group {
+  width: 40%;
+  margin: auto;
+}
+div>img {
+  margin-right: 20px;
+  height: 35px;
+}
+#checkbox_video
+{
+  width: 70%;
+}
+
+#checkbox_video p {
+  width: 120%;
+}
+
+#work>mat-form-field {
+  width: 60%;
+}
+
+#work>span {
+  width: 60%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+
+#Album_Upload {
+  width: 250px;
+  text-align: center;
+  margin: auto;
+}
+#Album>mat-form-field {
+  width: 60%;
+}
+
+#Album>span {
+  width: 60%;
+  font-size: 18px;
+  color: blue;
+  float: left;
+}
+
+.example-card {
+  width: 60%;
+  margin: auto;
+}
+
+.example-container {
+  width: 100%;
+  margin: 10px;
+  border: none;
+}
+ngx-dropzone {
+  height: 170px!important;
+}
+mat-drawer-container {
+  background: white;
+}
+mat-drawer-content>mat-form-field {
+  width: 83%;
+}
+mat-card-content {
+  width: 100%;
+  margin-right: 20px;
+}
+mat-card-content>mat-form-field {
+  width: 100%;
+  margin: auto;
+}
+mat-card-content textarea {
+  height: 66px;
+}
+#add_track {
+  width: 49%;
+  float: left;
+  margin: auto;
+}

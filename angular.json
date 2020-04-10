@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dinbog"
+    }
+  },
+  "defaultProject": "dinbog",
+  "cli": {
+    "analytics": "ab1ee188-2e04-4bf5-906f-e18385f4a408"
+  }
 }
