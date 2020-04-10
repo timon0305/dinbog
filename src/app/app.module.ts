@@ -20,11 +20,15 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { HomeComponent } from './home/home.component';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TalentComponent
+    TalentComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTabsModule,
     MatCardModule,
     MatSidenavModule,
+    MatBadgeModule,
+    MatMenuModule,
     MatCheckboxModule
   ],
   providers: [],

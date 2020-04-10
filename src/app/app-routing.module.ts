@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'wizard/talent',
     loadChildren: () => import('./wizard/talent/talent.module').then( m => m.TalentModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomeModule)
   }
 ];
 

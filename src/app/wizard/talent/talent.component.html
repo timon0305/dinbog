@@ -11,7 +11,8 @@
 
         <div id="dropzone">
           <ngx-dropzone (change)="onSelect($event)">
-            <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+            <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+              <br> Click Here</ngx-dropzone-label>
             <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
               <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-preview>
@@ -130,7 +131,8 @@
           <div>
             <span>
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                <br> Click Here</ngx-dropzone-label>
               <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
               </ngx-dropzone-preview>
@@ -138,7 +140,8 @@
             </span>
             <span>
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                <br> Click Here</ngx-dropzone-label>
               <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
               </ngx-dropzone-preview>
@@ -146,7 +149,8 @@
             </span>
             <span>
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                <br> Click Here</ngx-dropzone-label>
               <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
               </ngx-dropzone-preview>
@@ -154,7 +158,8 @@
             </span>
             <span>
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                <br> Click Here</ngx-dropzone-label>
               <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
               </ngx-dropzone-preview>
@@ -231,7 +236,8 @@
             <br>
             <div id="Video_Upload">
               <ngx-dropzone (change)="onSelect($event)">
-                <ngx-dropzone-label>Click Here</ngx-dropzone-label>
+                <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                  <br> Click Here</ngx-dropzone-label>
                 <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                   <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
                 </ngx-dropzone-preview>
@@ -297,7 +303,8 @@
       <h3>Your First Music Album </h3><br>
       <div id="Album_Upload">
         <ngx-dropzone (change)="onSelect($event)">
-          <ngx-dropzone-label>Upload Album Cover</ngx-dropzone-label>
+          <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+            <br> Upload Album Cover</ngx-dropzone-label>
           <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
           </ngx-dropzone-preview>
@@ -323,7 +330,8 @@
           <mat-drawer-container class="example-container">
             <mat-drawer mode="side" opened>
               <ngx-dropzone (change)="onSelect($event)">
-                <ngx-dropzone-label>Upload Cover</ngx-dropzone-label>
+                <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+                  <br> Upload Cover</ngx-dropzone-label>
                 <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                   <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
                 </ngx-dropzone-preview>
@@ -359,7 +367,7 @@
       <br><br>
       <div style="text-align: center">
         <a>Skip</a>
-        <button mat-raised-button color="primary" (click)="talent_Success($event)">Next Step</button>
+        <button mat-raised-button color="primary" (click)="talent_Success()">Next Step</button>
       </div>
     </mat-step>
   </mat-horizontal-stepper>

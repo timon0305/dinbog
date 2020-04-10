@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {SuccessComponent} from './success/success.component';
+import {MatDialog} from '@angular/material/dialog';
 
 interface Year {
   value: string;
@@ -47,7 +49,12 @@ export class TalentComponent implements OnInit {
   thirdFormGroup: FormGroup;
   forthFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder ) { }
+  success: string;
+
+  constructor(
+    private _formBuilder: FormBuilder,
+    public dialog: MatDialog,
+  ) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -75,8 +82,15 @@ export class TalentComponent implements OnInit {
     this.files.splice(this.files.indexOf(event), 1);
   }
 
-  talent_Success(event) {
+  talent_Success(): void {
+      const dialogRef = this.dialog.open(SuccessComponent, {
+        width: '60%',
+        data: {}
+      });
 
+      dialogRef.afterClosed().subscribe(result => {
+        this.success = result;
+      })
   }
 
 }

@@ -1,0 +1,63 @@
+<div class="toolbar" role="banner">
+   <div class="container" style="display: inline-block;">
+     <img src="../../assets/img/logo.svg" alt="">
+     <div class="wrap">
+       <div class="search">
+         <input type="text" class="searchTerm" placeholder="Search">
+         <button  class="searchButton">
+           <mat-icon>search</mat-icon>
+         </button>
+       </div>
+     </div>
+     <div id="toolbox">
+       <ul class="navigation-items">
+         <li>
+           <a><mat-icon>library_music</mat-icon></a>
+         </li>
+         <li>
+           <a><mat-icon aria-hidden="false" aria-label="Example home icon">folder_shared</mat-icon></a>
+         </li>
+         <li>
+           <a>
+             <mat-icon matBadge="15" matBadgeColor="primary" position="top">people_all</mat-icon>
+           </a>
+         </li>
+         <li>
+           <a><mat-icon>message</mat-icon></a>
+         </li>
+         <li>
+           <a><mat-icon matBadge="15" matBadgeColor="warn" position="top">notifications</mat-icon></a>
+         </li>
+         <li>
+           <a>
+             <img src="../../assets/avatar/avatar.jpg" alt="">
+             <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+               <mat-icon>arrow_drop_down</mat-icon>
+             </button>
+             <mat-menu #menu="matMenu" xPosition="before">
+               <button mat-menu-item>
+                 <mat-icon>dialpad</mat-icon>
+                 <span>Redial</span>
+               </button>
+               <button mat-menu-item disabled>
+                 <mat-icon>voicemail</mat-icon>
+                 <span>Check voice mail</span>
+               </button>
+               <button mat-menu-item>
+                 <mat-icon>notifications_off</mat-icon>
+                 <span>Disable alerts</span>
+               </button>
+             </mat-menu>
+           </a>
+
+         </li>
+       </ul>
+     </div>
+   </div>
+</div>
+<br><br><br><br>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+
