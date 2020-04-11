@@ -9,3 +9,21 @@ mat-card-header>div {
 mat-card-header>mat-form-field {
   width: 100%;
 }
+.photo_upload>button {
+  background: white;
+  height: 27.4px;
+  border-radius: 7%;
+  border: 1px solid;
+}
+.photo_upload>button>.fa {
+  margin-left: 3px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+#post {
+  float: right;
+}
+#post>button {
+  background: #1181C3;
+  color: white;
+}

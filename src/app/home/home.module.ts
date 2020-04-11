@@ -21,6 +21,11 @@ import { RecommendComponent } from './wall/recommend/recommend.component';
 import { LastReviewComponent } from './wall/last-review/last-review.component';
 import { SponsersComponent } from './wall/sponsers/sponsers.component';
 import { TopComponent } from './wall/top/top.component';
+import { MainContentComponent } from './wall/main-content/main-content.component';
+import { LikesModalComponent } from './wall/main-content/likes-modal/likes-modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -33,6 +38,8 @@ import { TopComponent } from './wall/top/top.component';
     LastReviewComponent,
     SponsersComponent,
     TopComponent,
+    MainContentComponent,
+    LikesModalComponent,
   ],
   imports: [
     CommonModule,
@@ -47,6 +54,9 @@ import { TopComponent } from './wall/top/top.component';
     MatInputModule,
     MatCheckboxModule,
     MatRadioModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatTooltipModule,
     RouterModule.forChild([
       {
         path: '',
@@ -59,6 +69,7 @@ import { TopComponent } from './wall/top/top.component';
         ]
       }
     ])
-  ]
+  ],
+  entryComponents: [LikesModalComponent]
 })
 export class HomeModule { }

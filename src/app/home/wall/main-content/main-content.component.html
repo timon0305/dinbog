@@ -1,0 +1,80 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      <mat-card-subtitle>2020/04/11/03/20/P.M</mat-card-subtitle>
+    </div>
+    <div class="ellipsis" style="text-align: right; width: 100%;">
+      <i class="fa fa-ellipsis-h fa-8x"></i>
+    </div>
+  </mat-card-header>
+  <p>Repository <span>#sharp</span> Repository <span>#sharp</span></p>
+  <img class="main-image" mat-card-image src="../../../../assets/img/will_adver.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      <button mat-button (click)="likes_modal()">3 LIKES</button>
+      <button mat-button>20 COMMENTS</button>
+    </p>
+  </mat-card-content>
+  <mat-card-actions style="display: flex; justify-content: space-between">
+    <div class="agree">
+      <i class="fa fa-thumbs-up"></i>
+      <i class="fa fa-comment-o"></i>
+      <i class="fa fa-share"></i>
+    </div>
+    <div class="bookmark"><i class="fa fa-bookmark" style="color: #1181C3;"></i></div>
+  </mat-card-actions>
+  <hr>
+  <h4><a>View Previews Comments</a></h4>
+  <mat-card-footer>
+    <div class="comments">
+      <div class="avatar">
+        <img src="../../../../assets/avatar/user8-128x128.jpg" alt="">
+      </div>
+      <div class="truncate">
+        <p (mouseover)="openDialogs">Arshly Pearson | I love your style
+
+        </p>
+        <p><i class="fa fa-thumbs-up"></i>3 &nbsp;
+          <span (click)="onValChange()" aria-hidden="false">Comments</span>
+        </p>
+        <div *ngIf="status === true" class="comment_reply">
+          <img src="../../../../assets/avatar/avatar.jpg" alt="">
+          <mat-form-field class="example-full-width">
+            <mat-label>Comments</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments">
+      <div class="avatar">
+        <img src="../../../../assets/avatar/user6-128x128.jpg" alt="">
+      </div>
+      <div class="truncate">
+        <p>Rudy Alexandra | You are amazing</p>
+        <p><i class="fa fa-thumbs-up"></i>2 &nbsp;<a >Comments</a></p>
+        <div class="sub_comments">
+          <div class="avatar">
+            <img src="../../../../assets/avatar/user2-160x160.jpg" alt="">
+          </div>
+          <div class="sub-comment">
+            <p>&nbsp;</p>
+            <p>Rudy Alexandra | You are amazing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reply">
+      <img src="../../../../assets/avatar/avatar.jpg" alt="">
+      <mat-form-field class="example-full-width">
+        <mat-label>Reply</mat-label>
+        <input matInput placeholder="Ex. Pizza">
+      </mat-form-field>
+    </div>
+  </mat-card-footer>
+</mat-card>

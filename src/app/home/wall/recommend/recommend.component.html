@@ -4,21 +4,18 @@
     <br>
   </mat-card-header>
   <br><br>
-  <mat-card-content>
-    <div style="display: flex;">
-      <span class="image">
-        <div mat-card-avatar class="example-header-image"></div>
-      </span>
-      <span>
-        <h4 class="name">Ruby Alexandra</h4>
-        <h4 class="time">Model of USA</h4>
-      </span>
-      <button class="follow" mat-button color="#1181C3">follow</button>
-      <button class="close" mat-icon-button aria-label="Example icon-button with a heart icon">
-        <mat-icon>close</mat-icon>
-      </button>
+  <mat-card-content style="justify-content: space-between">
+    <div class="name" style="display: flex">
+      <img class="example-header-image" src="../../../../assets/avatar/avatar5.png" alt="">
+      <div class="truncate">
+        <h4>Ruby Alexandra</h4>
+        <h5>Model of USA</h5>
+      </div>
     </div>
-
+    <div class="button-group">
+      <button mat-button class="follow">follow</button>
+      <i class="fa fa-close"></i>
+    </div>
   </mat-card-content>
   <mat-card-actions>
     <p><a> View All Recommendations</a></p>

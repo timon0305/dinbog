@@ -1,0 +1,20 @@
+<h3>Likes</h3>
+<hr>
+<div class="follows">
+  <div class="avatar_info" *ngFor="let item of ELEMENT_DATA" style="justify-content: space-between;">
+    <div style="display: flex;">
+      <img src="../../../../../assets/faces/{{item.avatar}}" alt="">
+      <div>
+        <h3>{{item.name}}</h3>
+        <h4>{{item.job}}</h4>
+        <h5><img src="https://www.countryflags.io/{{item.country}}/flat/64.png"><span>{{item.country_name}}</span></h5>
+      </div>
+    </div>
+    <div *ngIf="item.status === true" class="unfollowing" >
+      <button mat-button (click)="following(item.id)">follow</button>
+    </div>
+    <div *ngIf="item.status === false" class="following" >
+      <button mat-button (click)="following(item.id)">following</button>
+    </div>
+  </div>
+</div>

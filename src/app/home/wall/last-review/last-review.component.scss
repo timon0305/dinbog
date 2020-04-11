@@ -1,5 +1,5 @@
 .example-header-image {
-  background-image: url('../../../../assets/avatar/user1-128x128.jpg');
+  background-image: url('../../../../assets/avatar/avatar.png');
   background-size: cover;
 }
 mat-card-header {
@@ -7,8 +7,9 @@ mat-card-header {
   text-align: center;
 }
 .example-header-image {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 mat-card-title {
   float: left;
@@ -18,23 +19,71 @@ mat-card-title {
 span {
   margin: 0 5px 0 8px;
 }
-h4 {
-  margin: 8px 10px 0 10px;
+h4, h5 {
+  margin: 6px 10px 0 10px;
   color: gray;
 }
 .follow {
-  background: #1181C3;
-  color: white;
+  background: white;
+  color: #1181C3;
+  border: 1px solid #1181C3;
   height: 34px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .close {
-  margin-top: 10px;
-  margin-left: 10px;
+  background: white;
+  margin-top: 8px;
+  padding: 0;
+  width: 34px;
+  height: 34px;
 }
 a {
   color: #1181C3;
 }
 mat-card-footer {
   margin: 0;
+}
+mat-card-content {
+  display: flex;
+}
+mat-card-content>img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.button-group>.fa {
+  margin-left: 10px;
+}
+@media (min-width: 1200px) {
+  .truncate {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .name {
+    width: 164px;
+  }
+}
+@media (max-width: 1200px) {
+  .truncate {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .name {
+    width: 100px;
+  }
+}
+@media (max-width: 999px) {
+  .truncate {
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .name {
+    width: 90px;
+  }
 }

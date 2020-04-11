@@ -1,13 +1,13 @@
 @import '~@angular/material/grid-list/_grid-list-theme.scss';
 .toolbar {
-  position: absolute;
+  position: fixed;
   height: 67px;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
-
+  z-index: 10;
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -23,16 +23,30 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-
-
   .card.highlight-card span {
     margin-left: 72px;
   }
 }
 
-.container {
-  width: 80%;
-  margin: auto;
+@media (min-width: 1300px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 999px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .search {
@@ -86,11 +100,11 @@
   list-style: none;
 }
 
-.navigation-items mat-icon {
-  width: 30px;
-  margin-right: 20px;
-  margin-top: 5px;
+.navigation-items .fa {
+  margin-right: 30px;
+  margin-top: 10px;
   cursor: pointer;
+  font-size: 20px;
   color: #919191;
   filter: invert(100%);
 }
@@ -102,4 +116,9 @@ li>a>img {
 
 a button mat-icon {
   line-height: 0;
+}
+
+mat-form-field {
+  height: 68px;
+  width: 300px;
 }
