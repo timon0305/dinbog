@@ -1,6 +1,9 @@
 #image {
   text-align: center;
 }
+p, h1,h2,h3,h4,h5,h6 {
+  font-family: Roboto!important;
+}
 img {
   height: 59px;
   margin-top: 20px;
@@ -19,12 +22,12 @@ button {
   text-align: center;
 }
 h3 {
-  color: blue;
+  color: #1181C3;
 }
 
 button {
   color: white;
-  background: blue;
+  background: #1181C3;
   padding: 0 40px 0 40px;
 }
 
@@ -41,7 +44,7 @@ button {
 #birthday_name {
   margin-right: 20px;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
 }
 mat-form-field {
   margin: 0 16px 0 16px;
@@ -49,7 +52,7 @@ mat-form-field {
 
 #slide> span{
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   margin-right: 18%;
 }
 #slide > mat-slide-toggle {
@@ -67,7 +70,7 @@ mat-form-field {
 #homeTown>span {
   width: 62%;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   float: left;
 }
 
@@ -78,7 +81,7 @@ mat-form-field {
 #Address>span {
   width: 62%;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   float: left;
 }
 
@@ -104,7 +107,7 @@ mat-form-field {
 #Talent>span {
   width: 62%;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   float: left;
 }
 #checkbox {
@@ -115,7 +118,7 @@ mat-form-field {
 }
 
 a {
-  color: blue;
+  color: #1181C3;
   cursor: pointer;
 }
 
@@ -126,12 +129,12 @@ a {
 #Video_Upload_URL>span {
   width: 100%;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   float: left;
 }
 
 .mat-tab-label-content {
-  color: blue;
+  color: #1181C3;
 }
 mat-tab-group {
   width: 40%;
@@ -157,7 +160,7 @@ div>img {
 #work>span {
   width: 60%;
   font-size: 18px;
-  color: blue;
+  color: #1181C3;
   float: left;
 }
 
@@ -168,7 +171,7 @@ div>img {
 }
 
 mat-icon {
-  color: blue;
+  color: #1181C3;
   font-size: 40px;
 }
 #Album>mat-form-field {

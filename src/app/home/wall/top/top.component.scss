@@ -1,0 +1,11 @@
+.example-header-image {
+  background-image: url('../../../../assets/avatar/avatar.jpg');
+  background-size: cover;
+}
+mat-card-header>div {
+  width: 60px;
+  height: 60px;
+}
+mat-card-header>mat-form-field {
+  width: 100%;
+}

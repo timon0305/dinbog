@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Stories</mat-card-title>
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+    <mat-card-actions>
+      <div *ngFor="let item of ELEMENT_DATA" style="display: flex">
+          <span class="image">
+            <img src="../../../../assets/avatar/{{item.photo}}" alt="">
+          </span>
+          <span>
+            <h4 class="name">{{item.name}}</h4>
+            <h4 class="time">{{item.date}}</h4>
+          </span>
+      </div>
+    </mat-card-actions>
+  </mat-card-content>
+  <mat-card-footer>
+    <p><a>View All</a></p>
+  </mat-card-footer>
+</mat-card>

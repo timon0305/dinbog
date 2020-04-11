@@ -16,6 +16,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {FormsModule} from '@angular/forms';
+import {StoriesComponent} from './wall/stories/stories.component';
+import { RecommendComponent } from './wall/recommend/recommend.component';
+import { LastReviewComponent } from './wall/last-review/last-review.component';
+import { SponsersComponent } from './wall/sponsers/sponsers.component';
+import { TopComponent } from './wall/top/top.component';
 
 
 @NgModule({
@@ -23,6 +28,11 @@ import {FormsModule} from '@angular/forms';
     WallComponent,
     ModelComponent,
     AdvancedSearchComponent,
+    StoriesComponent,
+    RecommendComponent,
+    LastReviewComponent,
+    SponsersComponent,
+    TopComponent,
   ],
   imports: [
     CommonModule,

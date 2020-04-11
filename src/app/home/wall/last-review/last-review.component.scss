@@ -1,0 +1,40 @@
+.example-header-image {
+  background-image: url('../../../../assets/avatar/user1-128x128.jpg');
+  background-size: cover;
+}
+mat-card-header {
+  display: block;
+  text-align: center;
+}
+.example-header-image {
+  width: 60px;
+  height: 60px;
+}
+mat-card-title {
+  float: left;
+  margin-left: -16px;
+  font-family: Roboto;
+}
+span {
+  margin: 0 5px 0 8px;
+}
+h4 {
+  margin: 8px 10px 0 10px;
+  color: gray;
+}
+.follow {
+  background: #1181C3;
+  color: white;
+  height: 34px;
+  margin-top: 10px;
+}
+.close {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+a {
+  color: #1181C3;
+}
+mat-card-footer {
+  margin: 0;
+}
