@@ -26,6 +26,8 @@ import { LikesModalComponent } from './wall/main-content/likes-modal/likes-modal
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { SupportComponent } from './navbar/support/support.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     TopComponent,
     MainContentComponent,
     LikesModalComponent,
+    SupportComponent,
   ],
   imports: [
     CommonModule,
@@ -57,6 +60,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatDialogModule,
     MatExpansionModule,
     MatTooltipModule,
+    MatGridListModule,
     RouterModule.forChild([
       {
         path: '',
@@ -70,6 +74,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
       }
     ])
   ],
-  entryComponents: [LikesModalComponent]
+  entryComponents: [LikesModalComponent, SupportComponent]
 })
 export class HomeModule { }

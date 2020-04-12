@@ -34,20 +34,28 @@
            <a>
              <img src="../../assets/avatar/avatar.jpg" alt="">
              <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-               <mat-icon>arrow_drop_down</mat-icon>
+               <mat-icon style="color: gray;">arrow_drop_down</mat-icon>
              </button>
              <mat-menu #menu="matMenu" xPosition="before">
-               <button mat-menu-item>
-                 <mat-icon>dialpad</mat-icon>
-                 <span>Redial</span>
+               <button mat-menu-item class="support">
+                 <i class="fa fa-files-o"></i>
+                 <span>Create Business Page</span>
                </button>
-               <button mat-menu-item disabled>
-                 <mat-icon>voicemail</mat-icon>
-                 <span>Check voice mail</span>
+               <button mat-menu-item class="support">
+                 <i class="fa fa-exchange"></i>
+                 <span>Exchange role to <b>Latin Angels</b></span>
                </button>
-               <button mat-menu-item>
-                 <mat-icon>notifications_off</mat-icon>
-                 <span>Disable alerts</span>
+               <button mat-menu-item class="support" >
+                 <i class="fa fa-cog"></i>
+                 <span>Settings</span>
+               </button>
+               <button mat-menu-item class="support" (click)="Support()">
+                 <i class="fa fa-user-secret"></i>
+                 <span>Support</span>
+               </button>
+               <button mat-menu-item class="support">
+                 <i class="fa fa-sign-out"></i>
+                 <span>Log out</span>
                </button>
              </mat-menu>
            </a>

@@ -1,6 +1,6 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+    <div mat-card-avatar class="example-header-image" style="width: 60px; height: 60px;"></div>
     <div>
       <mat-card-title>Shiba Inu</mat-card-title>
       <mat-card-subtitle>Dog Breed</mat-card-subtitle>
@@ -10,7 +10,7 @@
       <i class="fa fa-ellipsis-h fa-8x"></i>
     </div>
   </mat-card-header>
-  <p>Repository <span>#sharp</span> Repository <span>#sharp</span></p>
+  <p class="repository">Repository <span>#sharp</span> Repository <span>#sharp</span></p>
   <img class="main-image" mat-card-image src="../../../../assets/img/will_adver.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
@@ -20,11 +20,11 @@
   </mat-card-content>
   <mat-card-actions style="display: flex; justify-content: space-between">
     <div class="agree">
-      <i class="fa fa-thumbs-up"></i>
+      <i class="fa fa-thumbs-up" style="color: #1181C3;"></i>
       <i class="fa fa-comment-o"></i>
       <i class="fa fa-share"></i>
     </div>
-    <div class="bookmark"><i class="fa fa-bookmark" style="color: #1181C3;"></i></div>
+    <div class="bookmark"><i class="fa fa-bookmark" style="color: #1181C3!important;"></i></div>
   </mat-card-actions>
   <hr>
   <h4><a>View Previews Comments</a></h4>
@@ -34,10 +34,15 @@
         <img src="../../../../assets/avatar/user8-128x128.jpg" alt="">
       </div>
       <div class="truncate">
-        <p (mouseover)="openDialogs">Arshly Pearson | I love your style
+        <p>
+          <span matTooltip="Info about the action"
+                matTooltipPosition="right"
+                matTooltipClass="custom-tooltip"
 
+          >Arshly Pearson</span>
+          | I love your style
         </p>
-        <p><i class="fa fa-thumbs-up"></i>3 &nbsp;
+        <p class="comment"><i class="fa fa-thumbs-up"></i>3 &nbsp;
           <span (click)="onValChange()" aria-hidden="false">Comments</span>
         </p>
         <div *ngIf="status === true" class="comment_reply">

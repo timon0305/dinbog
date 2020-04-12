@@ -1,0 +1,23 @@
+mat-checkbox {
+  font-family: Roboto;
+}
+.selects {
+  display: flex;
+  justify-content: space-around;
+}
+mat-form-field textarea {
+  height: 100px;
+}
+.button-group {
+  float: right;
+}
+#reset {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+  margin: 0 10px 0 10px;
+}
+#submit {
+  background: #1181C3;
+  color: white;
+  margin: 0 10px 0 10px;
+}

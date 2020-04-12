@@ -1,8 +1,6 @@
 .example-header-image {
   background-image: url('../../../../assets/avatar/avatar.jpg');
   background-size: cover;
-}
-.example-header-image {
   width: 60px;
   height: 60px;
 }
@@ -14,18 +12,20 @@ mat-card-title {
   float: right;
 }
 .ellipsis {
-  font-size: 30px;
+  font-size: 22px;
+  color: gray;
 }
-p>span {
+.comment>span {
   color: #1181C3;
   cursor: pointer;
 }
 .agree .fa {
-  font-size: 30px;
-  margin: 0 10px 0 10px
+  font-size: 22px;
+  margin: 0 10px 0 10px;
+  color: gray;
 }
 .bookmark .fa {
-  font-size: 30px;
+  font-size: 22px;
   margin: 0 10px 0 10px
 }
 mat-card-content {
@@ -96,4 +96,14 @@ mat-form-field {
 }
 .truncate>p {
   cursor: pointer;
+}
+truncate span {
+  color: #000;
+}
+.custom-tooltip {
+  background: #000000;
+  color: white;
+}
+.repository>span {
+  color: #1181C3;
 }
