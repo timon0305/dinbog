@@ -5,7 +5,7 @@
   height: 60px;
 }
 mat-card-title {
-  font-family: Roboto;
+  font-family: Roboto-Regular;
   font-size: 12px;
 }
 .info {
@@ -84,6 +84,9 @@ a {
   display: flex;
   width: 88%;
   margin: auto;
+}
+.mat-button {
+  border: none!important;
 }
 mat-form-field {
   width: 100%;

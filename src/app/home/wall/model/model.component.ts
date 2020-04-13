@@ -15,10 +15,11 @@ export class ModelComponent implements OnInit {
 
   ngOnInit(): void {
     this.ELEMENT_DATA = [
-      {name: 'Hydrogen',  symbol: '100'},
-      {name: 'Helium',  symbol: '50'},
-      {name: 'Lithium',  symbol: '140'},
-      {name: 'Beryllium', symbol: '500'}
+      {name: 'Like',  symbol: '100'},
+      {name: 'Friends',  symbol: '50'},
+      {name: 'Following',  symbol: '140'},
+      {name: 'Followers', symbol: '500'},
+      {name: 'Visits', symbol: '300'}
     ]
   }
 

@@ -14,7 +14,7 @@ mat-card-header {
 mat-card-title {
   float: left;
   margin-left: -16px;
-  font-family: Roboto;
+  font-family: Roboto-Regular;
 }
 span {
   margin: 0 5px 0 8px;
@@ -23,10 +23,10 @@ h4, h5 {
   margin: 6px 10px 0 10px;
   color: gray;
 }
-.follow {
+.button-group>.follow {
   background: white;
   color: #1181C3;
-  border: 1px solid #1181C3;
+  border: 1px solid #1181C3!important;
   height: 34px;
   margin-top: 8px;
 }

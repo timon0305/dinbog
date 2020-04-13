@@ -1,5 +1,5 @@
 mat-checkbox {
-  font-family: Roboto;
+  font-family: Roboto-Regular;
 }
 .selects {
   display: flex;
@@ -10,6 +10,10 @@ mat-form-field textarea {
 }
 .button-group {
   float: right;
+  margin-top: 16px;
+}
+.button-group>.follow {
+  border: 1px solid #1181C3;
 }
 #reset {
   border: 1px solid #1181C3;

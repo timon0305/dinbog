@@ -2,17 +2,15 @@
   padding: 30PX;
 }
 
-h5>img {
+h4>img {
   width: 25px;
-  height: 20px;
+  height: 14px;
 }
-h5 {
-  display: flex;
-}
-h5> span {
+
+h4> span {
   margin: 3px 0 0 10px;
 }
-h5 {
+h4 {
   margin: 10px 0 0 10px;
 }
 mat-card>div>img {
@@ -25,4 +23,12 @@ mat-card>div>img {
 }
 .row > div {
   width: 20%;
+}
+.search-item{
+  display: inline-block;
+  width: 215px;
+  text-align: center;
+}
+.search-item>mat-card {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)!important;
 }

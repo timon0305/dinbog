@@ -1,0 +1,29 @@
+h4>img {
+  width: 25px;
+  height: 14px;
+}
+h4> span {
+  margin: 3px 0 0 10px;
+}
+h4 {
+  margin: 10px 0 0 10px;
+}
+mat-card>div>img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+.row > mat-card {
+  box-shadow: none!important;
+}
+.row > div {
+  width: 20%;
+}
+.search-item{
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+}
+.search-item>mat-card {
+  box-shadow: none!important;
+}

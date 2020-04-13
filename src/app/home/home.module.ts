@@ -48,6 +48,12 @@ import { ContextualSearchComponent } from './contextual-search/contextual-search
 import {MatTabsModule} from '@angular/material/tabs';
 import { ContextualSearchTalentsComponent } from './contextual-search/contextual-search-talents/contextual-search-talents.component';
 import { ContextualSearchAdvertiseComponent } from './contextual-search/contextual-search-advertise/contextual-search-advertise.component';
+import { InvitationComponent } from './invitation/invitation.component';
+import { InvitationModelComponent } from './invitation/invitation-model/invitation-model.component';
+import { InvitationSocialLinkComponent } from './invitation/invitation-social-link/invitation-social-link.component';
+import { InvitationAdvertiseComponent } from './invitation/invitation-advertise/invitation-advertise.component';
+import { InvitationMainComponent } from './invitation/invitation-main/invitation-main.component';
+import { InvitationPeopleGroupComponent } from './invitation/invitation-people-group/invitation-people-group.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +76,12 @@ import { ContextualSearchAdvertiseComponent } from './contextual-search/contextu
     ContextualSearchComponent,
     ContextualSearchTalentsComponent,
     ContextualSearchAdvertiseComponent,
+    InvitationComponent,
+    InvitationModelComponent,
+    InvitationSocialLinkComponent,
+    InvitationAdvertiseComponent,
+    InvitationMainComponent,
+    InvitationPeopleGroupComponent,
   ],
   imports: [
     CommonModule,
@@ -110,6 +122,10 @@ import { ContextualSearchAdvertiseComponent } from './contextual-search/contextu
           {
             path: 'contextual_search',
             component: ContextualSearchComponent
+          },
+          {
+            path: 'invitation',
+            component: InvitationComponent
           }
         ],
       },

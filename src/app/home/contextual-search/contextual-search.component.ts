@@ -18,5 +18,9 @@ export class ContextualSearchComponent implements OnInit {
   ];
   ngOnInit(): void {
   }
-
+  change_tab(id) {
+    this.titles.forEach(function (item) {
+      item.id == id ? item.status=true:item.status=false;
+    })
+  }
 }

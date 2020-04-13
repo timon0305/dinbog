@@ -1,9 +1,9 @@
 <div class="contextual_nav">
   <br>
   <div class="tab_nav" *ngFor="let item of titles">
-    <div>
+    <div [ngClass]="item.status===true?'active':''" (click)="change_tab(item.id)">
       <h3>{{item.title}}</h3>
-      <p>{{item.subtitle}}</p>
+      <p >{{item.subtitle}}</p>
     </div>
   </div>
 </div>

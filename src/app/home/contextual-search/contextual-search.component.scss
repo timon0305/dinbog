@@ -16,6 +16,8 @@
 .tab_nav div {
   width: 160px;
   text-align: center;
+}
+.tab_nav div.active {
   border-bottom: 3px solid #1181C3;
 }
 .row {
