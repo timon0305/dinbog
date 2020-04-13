@@ -7,11 +7,11 @@
   <mat-card-content>
     <mat-card-actions>
       <div *ngFor="let item of ELEMENT_DATA" style="display: flex">
-          <span class="image" style="margin-top: 20px">
+          <span class="image story_image" >
             <img src="../../../../assets/avatar/{{item.photo}}" alt="">
           </span>
-          <span style="margin-top: 15px">
-            <h4 class="name">{{item.name}}</h4>
+          <span class="story_name" style="margin-top: 15px">
+            <h3 class="name">{{item.name}}</h3>
             <h4 class="time">{{item.date}}</h4>
           </span>
       </div>

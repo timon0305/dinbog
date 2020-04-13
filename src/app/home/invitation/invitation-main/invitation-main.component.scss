@@ -55,9 +55,9 @@
 }
 .invitation_body span {
   font-size: 12px;
+  margin-left: 20px;
 }
 .invitation_body .invitation_reply {
-  color: #1181C3;
   font-weight: bold;
   font-size: 14px;
 }
@@ -69,4 +69,24 @@
 #invitation mat-card-footer {
   text-align: center;
   padding-bottom: 10px;
+}
+.invitation_title p {
+  cursor: pointer;
+  font-size: 20px;
+}
+::ng-deep .round-check {
+  & .mat-checkbox-background, .mat-checkbox-frame {
+    border-radius: 50% !important;
+    background: #1181C3;
+  }
+}
+.invitation_body>div>div>h5 {
+  margin-top: -2px;
+}
+.invitation_reply>a {
+  color: #1181C3;
+  text-underline: none;
+}
+::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: #1181C3 !important;
 }

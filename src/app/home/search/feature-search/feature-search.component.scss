@@ -48,3 +48,31 @@ mat-expansion-panel {
   width: 96%;
   margin-left: 3px;
 }
+.ng5-slider .ng5-slider-pointer {
+  background-color: darkgray!important;
+  width: 13px!important;
+  height: 13px!important;
+  top: -5px!important;
+}
+.ng5-slider .ng5-slider-selection {
+  z-index: 2;
+  background: lightgray!important;
+  border-radius: 2px;
+}
+.ng5-slider .ng5-slider-bar {
+  right: 0!important;
+  height: 2px!important;
+  z-index: 1;
+  background: #d8e0f3;
+  border-radius: 2px;
+}
+.ng5-slider {
+  height: 2px!important;
+  width: 100%!important;
+  margin: 4px!important;
+}
+.range_slider {
+  float: right;
+  width: 70%;
+  margin: auto;
+}

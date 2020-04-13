@@ -1,27 +1,11 @@
-import {Component, OnInit, EventEmitter, Inject} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Router} from '@angular/router';
-
-
-export interface Filter {
-  name: string;
-  from: number,
-  to: number,
-  active: boolean
-}
-
-const filter: Filter[] = [
-  {name: 'Title1', from: 0, to: 100, active: false},
-  {name: 'Title2', from: 0, to: 100, active: false},
-  {name: 'Title3', from: 0, to: 100, active: false},
-  {name: 'Title4', from: 0, to: 100, active: false},
-  {name: 'Title5', from: 0, to: 100, active: false}
-];
-
 
 @Component({
   selector: 'app-feature-search',
   templateUrl: './feature-search.component.html',
-  styleUrls: ['./feature-search.component.scss']
+  styleUrls: ['./feature-search.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FeatureSearchComponent implements OnInit {
   constructor(
