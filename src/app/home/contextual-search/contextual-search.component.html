@@ -1,0 +1,24 @@
+<div class="contextual_nav">
+  <br>
+  <div class="tab_nav" *ngFor="let item of titles">
+    <div>
+      <h3>{{item.title}}</h3>
+      <p>{{item.subtitle}}</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="contextual_search_main">
+    <app-contextual-search-talents></app-contextual-search-talents>
+  </div>
+  <div class="contextual_search_advertise">
+    <app-contextual-search-advertise></app-contextual-search-advertise>
+    <br>
+    <div class="contact_us">
+      Terms and Conditions Privacy Policy <br>
+      Blog &nbsp; About us &nbsp; FAQ
+      <h3>dinbog &copy; 2020</h3>
+    </div>
+  </div>
+</div>

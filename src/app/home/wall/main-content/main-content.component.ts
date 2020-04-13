@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {LikesModalComponent} from './likes-modal/likes-modal.component';
 import {MatTooltip} from '@angular/material/tooltip';
+import {PostComponent} from './post/post.component';
 
 @Component({
   selector: 'app-main-content',
@@ -23,7 +24,6 @@ export class MainContentComponent implements OnInit {
 
   }
 
-
   likes_modal(): void {
     const dialogRef = this.dialog.open(LikesModalComponent, {
       width: '50%',
@@ -35,6 +35,17 @@ export class MainContentComponent implements OnInit {
     })
   }
 
+  article_post(): void {
+    const dialogRef = this.dialog.open(PostComponent, {
+      width: '70%',
+      height: '800px',
+      panelClass: 'app-full-bleed-dialog',
+      data: {}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.success = result
+    })
+  }
 
   onValChange() {
     this.status = !this.status;

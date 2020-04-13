@@ -2,6 +2,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~@angular/material/grid-list/_grid-list-theme.scss';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 .row {
   display: inline-flex;
@@ -17,35 +18,7 @@
 //  margin: 0 0 0 5px
 //}
 
-@media (min-width: 900px) {
-  .mat-main-content {
-    width: 75%;
-    margin: 0 5px 0 10px
-  }
-  .mat-advertise {
-    width: 25%;
-    margin: 0 0 0 5px
-  }
-}
 
-@media (max-width: 900px) {
-  .mat-main-content {
-    width: 100%;
-    margin: 0 5px 0 10px
-  }
-  .mat-advertise {
-    width: 100%;
-    margin: 0 0 0 5px
-  }
-}
-.mat-side-bar {
-  width: 25%;
-  margin: 0 10px 0 10px
-}
-.main-content {
-  width: 75%;
-  margin: 0 10px 0 10px
-}
 p, h1, h2, h3, h4, h5, h6, label {
   font-family: Roboto!important;
 }

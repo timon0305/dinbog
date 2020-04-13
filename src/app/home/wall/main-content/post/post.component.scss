@@ -1,0 +1,42 @@
+.custom-dialog-container .mat-dialog-container {
+  margin: 0;
+}
+.post_image {
+  width: 50%;
+  margin-top: 1px;
+}
+.post_article {
+  width: 50%;
+}
+#show_more {
+  float: right;
+  font-size: 14px;
+}
+#show_more_icon {
+  font-size: 22px;
+  margin-left: 10px;
+}
+button {
+  font-family: Roboto;
+  font-size: 12px;
+}
+.example-viewport {
+  height: 476px;
+  width: 100%;
+}
+
+.example-item {
+  height: 50px;
+}
+.comment>i {
+  color: #1181C3;
+}
+.reply button {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+  background: #ffffff;
+  float: right;
+  height: 37px;
+  margin-top: 10px;
+}
+

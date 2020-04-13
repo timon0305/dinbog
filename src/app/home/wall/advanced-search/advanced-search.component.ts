@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 interface Food {
   value: string;
@@ -17,10 +18,15 @@ export class AdvancedSearchComponent implements OnInit {
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
-  constructor() { }
+  constructor(
+    private _router: Router
+  ) { }
 
   ngOnInit(): void {
 
   }
 
+  advanced_Search() {
+    this._router.navigate(['home/search'])
+  }
 }

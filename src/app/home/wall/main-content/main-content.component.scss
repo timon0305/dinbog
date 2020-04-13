@@ -107,3 +107,11 @@ truncate span {
 .repository>span {
   color: #1181C3;
 }
+.mat-dialog-container {
+  margin: 0!important;
+}
+.app-full-bleed-dialog .mat-dialog-container {
+  padding: 0!important;
+  margin: 0!important;
+  overflow-y: -moz-scrollbars-none;
+}

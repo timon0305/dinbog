@@ -6,7 +6,7 @@ mat-checkbox {
   justify-content: space-around;
 }
 mat-form-field textarea {
-  height: 100px;
+  height: 100px;;
 }
 .button-group {
   float: right;
@@ -20,4 +20,7 @@ mat-form-field textarea {
   background: #1181C3;
   color: white;
   margin: 0 10px 0 10px;
+}
+mat-form-field {
+  width: 100%;
 }

@@ -27,6 +27,8 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    'nouislider': 'node_modules/nouislider',
+    'ng2-nouislider': 'node_modules/ng2-nouislider',
   });
 };

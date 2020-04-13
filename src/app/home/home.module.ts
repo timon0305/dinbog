@@ -9,7 +9,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
-import { AdvancedSearchComponent } from './wall/advanced-search/advanced-search.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -28,7 +27,27 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { SupportComponent } from './navbar/support/support.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { PostComponent } from './wall/main-content/post/post.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import { SearchComponent } from './search/search.component';
+import {AdvancedSearchComponent} from './wall/advanced-search/advanced-search.component';
+import { SearchsideComponent } from './search/searchside/searchside.component';
+import { FeatureSearchComponent } from './search/feature-search/feature-search.component';
+import {Ng5SliderModule} from 'ng5-slider';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {PortalModule} from '@angular/cdk/portal';
+import {PlatformModule} from '@angular/cdk/platform';
+import {OverlayModule} from '@angular/cdk/overlay';
+import {ObserversModule} from '@angular/cdk/observers';
+import {BidiModule} from '@angular/cdk/bidi';
+import {A11yModule} from '@angular/cdk/a11y';
+import { SearchMainComponent } from './search/search-main/search-main.component';
+import { ContextualSearchComponent } from './contextual-search/contextual-search.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ContextualSearchTalentsComponent } from './contextual-search/contextual-search-talents/contextual-search-talents.component';
+import { ContextualSearchAdvertiseComponent } from './contextual-search/contextual-search-advertise/contextual-search-advertise.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +62,22 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MainContentComponent,
     LikesModalComponent,
     SupportComponent,
+    PostComponent,
+    SearchComponent,
+    SearchsideComponent,
+    FeatureSearchComponent,
+    SearchMainComponent,
+    ContextualSearchComponent,
+    ContextualSearchTalentsComponent,
+    ContextualSearchAdvertiseComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
+    ScrollingModule,
+    Ng5SliderModule,
+
+    //Material Module
     MatFormFieldModule,
     MatMenuModule,
     MatIconModule,
@@ -61,6 +92,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatExpansionModule,
     MatTooltipModule,
     MatGridListModule,
+    MatTabsModule,
+
     RouterModule.forChild([
       {
         path: '',
@@ -69,11 +102,32 @@ import {MatGridListModule} from '@angular/material/grid-list';
           {
             path: 'wall',
             component: WallComponent
+          },
+          {
+            path: 'search',
+            component: SearchComponent
+          },
+          {
+            path: 'contextual_search',
+            component: ContextualSearchComponent
           }
-        ]
-      }
+        ],
+      },
+
     ])
   ],
-  entryComponents: [LikesModalComponent, SupportComponent]
+  exports: [
+    // CDK
+    A11yModule,
+    BidiModule,
+    ObserversModule,
+    OverlayModule,
+    PlatformModule,
+    PortalModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule
+    ],
+  entryComponents: [LikesModalComponent, SupportComponent, PostComponent]
 })
 export class HomeModule { }

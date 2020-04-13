@@ -1,0 +1,53 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@media (min-width: 1300px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 999px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .search-side-bar {
+    width: 18.75%;
+    margin: 0 10px 0 10px
+  }
+  .search-content {
+    width: 70%;
+    margin: 0 10px 0 10px
+  }
+}
+
+@media (max-width: 900px) {
+  .search-side-bar {
+    width: 18.75%;
+    margin: 0 10px 0 10px
+  }
+  .search-content {
+    width: 70%;
+    margin: 0 10px 0 10px
+  }
+
+}
+.search-side-bar {
+  width: 18.75%;
+  margin: 0 10px 0 10px
+}
+.search-content {
+  width: 70%;
+  margin: 0 10px 0 10px
+}

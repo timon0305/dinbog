@@ -1,0 +1,44 @@
+mat-card-title {
+  margin: 0!important;
+  text-align: center;
+  font-family: Roboto!important;
+  width: 100%;
+}
+mat-card-header {
+  display: block;
+  text-align: center;
+}
+mat-card-actions {
+  text-align: center;
+}
+
+mat-card-content {
+  width: 100%;
+  margin: auto;
+}
+mat-form-field {
+  width: 100%;
+  margin: auto;
+}
+.checkbox {
+  margin: auto;
+}
+.checkbox>mat-checkbox {
+  margin: 0 20px 0 20px;
+}
+.radio-group {
+  margin: auto;
+}
+.radio-group>mat-radio-group {
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+}
+.radio-group>mat-radio-group>mat-radio-button {
+  width: 30%;
+  margin: auto;
+}
+#search {
+  background: #1181C3;
+  color: white;
+}
