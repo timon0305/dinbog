@@ -55,6 +55,8 @@ import { InvitationMainComponent } from './invitation/invitation-main/invitation
 import { InvitationPeopleGroupComponent } from './invitation/invitation-people-group/invitation-people-group.component';
 import { InvitationManageAllComponent } from './invitation/invitation-manage-all/invitation-manage-all.component';
 import { NotificationComponent } from './wall/notification/notification.component';
+import { ChatComponent } from './chat/chat.component';
+import { ChatListComponent } from './chat/chat-list/chat-list.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +86,8 @@ import { NotificationComponent } from './wall/notification/notification.componen
     InvitationPeopleGroupComponent,
     InvitationManageAllComponent,
     NotificationComponent,
+    ChatComponent,
+    ChatListComponent,
   ],
   imports: [
     CommonModule,
@@ -136,6 +140,10 @@ import { NotificationComponent } from './wall/notification/notification.componen
           {
             path: 'notification',
             component: NotificationComponent
+          },
+          {
+            path: 'chat',
+            component: ChatComponent
           }
         ],
       },

@@ -2,6 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {SupportComponent} from './navbar/support/support.component';
 import {Router} from '@angular/router';
+import {Message} from '@angular/compiler/src/i18n/i18n_ast';
 
 export interface PeriodicElement {
   country_name: string;
@@ -38,6 +39,24 @@ const notification_data: Notification[] = [
   {avatar: 'face16.jpg' ,name: 'Call Mesolan',message: 'commented your post', days: 'Sat'},
   {avatar: 'face17.jpg' ,name: 'Virginia',message: 'likes your post', days: 'Sun'},
 ];
+
+export interface Messages {
+  avatar: string;
+  name: string;
+  message: string;
+  days: string;
+  status: boolean;
+}
+
+const message_data: Messages[] = [
+  {status: false, avatar: 'face11.jpg' ,name: 'Amanda Smith', message: 'mentioned you in a comment', days: '9:40 am'},
+  {status: false, avatar: 'face12.jpg' ,name: 'Katie Angel',message: 'is now your friend', days: 'Mon'},
+  {status: false, avatar: 'face23.jpg' ,name: 'jobanna Darr',message: 'is now following you', days: 'Wed'},
+  {status: false, avatar: 'face14.jpg' ,name: 'Andres Reque',message: 'has confirmed the request', days: 'Thu'},
+  {status: false, avatar: 'face15.jpg' ,name: 'Rocio Mirand',message: 'has rejected the request', days: 'Fri'},
+  {status: false, avatar: 'face16.jpg' ,name: 'Call Mesolan',message: 'commented your post', days: 'Sat'},
+  {status: false, avatar: 'face17.jpg' ,name: 'Virginia',message: 'likes your post', days: 'Sun'},
+];
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -56,7 +75,10 @@ export class HomeComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 
   notification_column: string[] = [ 'message', 'days'];
-  notifi_data = notification_data;
+  notifi_data_all = notification_data;
+
+  message_column: string[] = [ 'message', 'days'];
+  message_all = message_data;
 
   ngOnInit(): void {
   }
@@ -76,5 +98,8 @@ export class HomeComponent implements OnInit {
   }
   see_all_notification() {
     this._router.navigate(['home/notification'])
+  }
+  chat_list() {
+    this._router.navigate(['home/chat'])
   }
 }

@@ -137,6 +137,8 @@ mat-form-field {
   height: 650px;}
 #mat-menu-panel-1 { max-width: 485px!important; width: 485px !important;
   height: 540px;}
+#mat-menu-panel-2 { max-width: 485px!important; width: 485px !important;
+  height: 540px;}
 table {
   width: 480px;
 }
@@ -173,12 +175,21 @@ th.mat-header-cell {
   width: 50px;
   border-radius: 50%;
   float: left;
+  margin-right: 10px;
 }
 .notification_nav>.request>img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   float: left;
+  margin-right: 10px;
+}
+.message_nav>.request>img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
 }
 td {
   padding: 10px 0 10px  0!important;
@@ -208,7 +219,7 @@ h5 span {
 .request div {
   float: left;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 0;
 }
 .see_all {
   text-align: center;
@@ -229,6 +240,10 @@ th>h2 {
   text-align: right;
   margin-right: 20px;
 }
+#message_top {
+  text-align: right;
+  margin-right: 20px;
+}
 .day_check .mat-checkbox-background {
   background: darkgray;
   border-radius: 50%;
@@ -239,6 +254,16 @@ th>h2 {
 .day_check .mat-checkbox-frame {
   border-radius: 50%!important;
 }
-.mat-form-field-wrapper .ng-tns-c105-0 {
-
+.message_check .mat-checkbox-background {
+  background: darkgray;
+  border-radius: 50%;
+}
+.message_check .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #1181C3;
+}
+.message_check .mat-checkbox-frame {
+  border-radius: 50%!important;
+}
+.request>div>span>.fa {
+  color: darkgray;
 }

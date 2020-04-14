@@ -1,0 +1,94 @@
+.message-30 {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.message-70 {
+  width: 70%;
+}
+.message-30>h4>.fa-ellipsis-h {
+  float: right;
+  margin-right: 15px;
+  font-size: 22px;
+}
+.message-70>h4>.fa-ellipsis-h {
+  float: right;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.message_show {
+  border: 1px  solid darkgray;
+  height: 950px;
+}
+#message_list {
+  width: 100%;
+}
+#message_title {
+  border-bottom: 1px solid gray;
+}
+#chatting_list {
+  border: 1px solid lightgray;
+}
+#chatting_list>mat-form-field {
+  width: 100%;
+}
+.mat-form-field-label-wrapper {
+  margin-left: 20px;
+}
+.chatting_list>.request>div>img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.user_status .mat-checkbox-background {
+  background: darkgray;
+  border-radius: 50%;
+}
+.user_status .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #13c353;
+  color: #13c353;
+}
+.user_status .mat-checkbox-frame {
+  border-radius: 50%!important;
+}
+.mat-checkbox-inner-container {
+  width: 10px!important;
+  height: 10px!important;
+}
+.chatting_list mat-checkbox {
+  margin-left: -10px;
+  margin-top: -5px;
+}
+.user_name {
+  margin-left: 10px!important;
+}
+.example-viewport {
+  height: 1000px;
+  width: 100%;
+}
+
+.example-item {
+  height: 50px;
+}
+#chatting_list>mat-form-field {
+  height: 48px;
+}
+td.active {
+  border-left: 3px solid #1181C3;
+}
+.message_input {
+  position: absolute;
+  bottom: 10px;
+  width: 63%;
+  margin: auto;
+  display: flex;
+}
+.message_input>mat-form-field {
+  width: 80%;
+  margin: auto;
+}
+#message_post {
+  background: #1181C3;
+  color: #ffffff;
+  height: 37px;
+  margin-top: 12px;
+}

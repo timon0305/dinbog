@@ -67,7 +67,41 @@
            </a>
          </li>
          <li>
-           <a><i class="fa fa-comment-o"></i></a>
+           <a><i class="fa fa-comment-o" [matMenuTriggerFor]="my_messages"></i>
+             <div class="user_group">
+               <mat-menu #my_messages="matMenu" xPosition="before" class="users">
+                 <br>
+                 <h4 id="message_top">Mark all as read</h4>
+                 <hr>
+                 <table mat-table [dataSource]="message_all" class="">
+                   <ng-container matColumnDef="message">
+                     <th mat-header-cell *matHeaderCellDef> <h2>Message</h2> </th>
+                     <td mat-cell *matCellDef="let elements" class="message_nav">
+                       <div class="request ">
+                         <img src="../../assets/faces/{{elements.avatar}}" alt="">
+                         <div>
+                           <h3>{{elements.name}}  <mat-checkbox class="message_check"></mat-checkbox></h3>
+                           <span><i class="fa fa-reply"></i> {{elements.message}}</span>
+                         </div>
+                       </div>
+                     </td>
+                   </ng-container>
+
+                   <!-- Symbol Column -->
+                   <ng-container matColumnDef="days">
+                     <th mat-header-cell *matHeaderCellDef> <h2>Days</h2> </th>
+                     <td mat-cell *matCellDef="let elements">
+                       {{elements.days}} <br> <mat-checkbox class="message_check"></mat-checkbox>
+                     </td>
+                   </ng-container>
+                   <tr mat-row *matRowDef="let row; columns: message_column;"></tr>
+                 </table>
+                 <br>
+                 <div class="see_all">
+                   <span (click)="chat_list()">See All</span>
+                 </div>
+               </mat-menu>
+             </div></a>
          </li>
          <li>
            <a><i class="fa fa-bell-o" [matMenuTriggerFor]="notifications"></i>
@@ -76,7 +110,7 @@
                  <br>
                  <h4 id="notification_top">Mark all as read</h4>
                  <hr>
-                 <table mat-table [dataSource]="notifi_data" class="mat-elevation-z1">
+                 <table mat-table [dataSource]="notifi_data_all" class="mat-elevation-z1">
                    <ng-container matColumnDef="message">
                      <th mat-header-cell *matHeaderCellDef> <h2>Message</h2> </th>
                      <td mat-cell *matCellDef="let elements" class="notification_nav">
