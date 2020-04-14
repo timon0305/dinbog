@@ -54,6 +54,7 @@ import { InvitationSocialLinkComponent } from './invitation/invitation-social-li
 import { InvitationAdvertiseComponent } from './invitation/invitation-advertise/invitation-advertise.component';
 import { InvitationMainComponent } from './invitation/invitation-main/invitation-main.component';
 import { InvitationPeopleGroupComponent } from './invitation/invitation-people-group/invitation-people-group.component';
+import { InvitationManageAllComponent } from './invitation/invitation-manage-all/invitation-manage-all.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { InvitationPeopleGroupComponent } from './invitation/invitation-people-g
     InvitationAdvertiseComponent,
     InvitationMainComponent,
     InvitationPeopleGroupComponent,
+    InvitationManageAllComponent,
   ],
   imports: [
     CommonModule,
@@ -126,6 +128,10 @@ import { InvitationPeopleGroupComponent } from './invitation/invitation-people-g
           {
             path: 'invitation',
             component: InvitationComponent
+          },
+          {
+            path: 'invitation_manage_all',
+            component: InvitationManageAllComponent
           }
         ],
       },

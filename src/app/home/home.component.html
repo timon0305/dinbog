@@ -27,7 +27,7 @@
                  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                    <ng-container matColumnDef="name">
                      <th mat-header-cell *matHeaderCellDef> <h2>Connection requests</h2> </th>
-                     <td mat-cell *matCellDef="let element">
+                     <td mat-cell *matCellDef="let element" class="invite_nav">
                        <div class="request">
                          <img src="../../assets/faces/{{element.avatar}}" alt="">
                          <div>
