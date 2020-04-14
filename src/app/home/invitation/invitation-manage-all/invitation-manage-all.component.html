@@ -5,10 +5,10 @@
       <mat-tab-group>
         <mat-tab label="Received">
           <br>
-          <button mat-button id="all_invitations">All Invitations</button>
+          <button mat-button class="all_invitations">All Invitations</button>
           <hr>
 
-          <table mat-table [dataSource]="dataSource" id="all_invitations_table">
+          <table mat-table [dataSource]="dataSource" class="all_invitations_table">
 
             <!-- Checkbox Column -->
             <ng-container matColumnDef="select">
@@ -29,30 +29,31 @@
             </ng-container>
 
             <ng-container matColumnDef="name">
-              <th mat-header-cell *matHeaderCellDef> <h2>Connection requests</h2> </th>
+              <th mat-header-cell *matHeaderCellDef> </th>
               <td mat-cell *matCellDef="let element">
                 <div class="invitation_request">
                   <img src="../../assets/faces/{{element.avatar}}" alt="">
                   <div>
-                    <h3 >{{element.name}}  </h3>
+                    <h2 >{{element.name}}  <mat-checkbox class="round-check"></mat-checkbox></h2>
                     <h4>{{element.job}}</h4>
                     <h5>
                       <img src="https://www.countryflags.io/{{element.country}}/flat/64.png">
                       <span>{{element.country_name}}</span>
                     </h5>
+                    <h5>1 hour ago</h5>
                   </div>
                 </div>
               </td>
             </ng-container>
 
             <ng-container matColumnDef="job">
-              <th mat-header-cell *matHeaderCellDef> <h2>Find Connection</h2> </th>
+              <th mat-header-cell *matHeaderCellDef> <button mat-button class="invitation_header_rejects">Reject 2</button> </th>
               <td mat-cell *matCellDef="let element"> <button mat-button class="reject">Reject</button> </td>
             </ng-container>
 
             <!-- Symbol Column -->
             <ng-container matColumnDef="country">
-              <th mat-header-cell *matHeaderCellDef> <h2>Manage all</h2> </th>
+              <th mat-header-cell *matHeaderCellDef> <button mat-button class="invitation_header_accepts">Accept 2</button> </th>
               <td mat-cell *matCellDef="let element">
                 <button mat-button class="accept" style="border: 1px solid #1181C3!important;">Accept</button> </td>
             </ng-container>
@@ -62,7 +63,62 @@
           </table>
         </mat-tab>
         <mat-tab label="Send">
+          <br>
+          <button mat-button class="all_invitations">All Invitations</button>
+          <hr>
+          <table mat-table [dataSource]="dataSource" class="all_invitations_table">
 
+            <!-- Checkbox Column -->
+            <ng-container matColumnDef="select">
+              <th mat-header-cell *matHeaderCellDef>
+                <mat-checkbox class="square_check" (change)="$event ? masterToggle() : null"
+                              [checked]="selection.hasValue() && isAllSelected()"
+                              [indeterminate]="selection.hasValue() && !isAllSelected()"
+                              [aria-label]="checkboxLabel()">&nbsp; Select 1-9 of 9
+                </mat-checkbox>
+              </th>
+              <td mat-cell *matCellDef="let row">
+                <mat-checkbox class="square_check" (click)="$event.stopPropagation()"
+                              (change)="$event ? selection.toggle(row) : null"
+                              [checked]="selection.isSelected(row)"
+                              [aria-label]="checkboxLabel(row)">
+                </mat-checkbox>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let element">
+                <div class="invitation_request">
+                  <img src="../../assets/faces/{{element.avatar}}" alt="">
+                  <div>
+                    <h2 >{{element.name}}  <mat-checkbox class="round-check"></mat-checkbox></h2>
+                    <h4>{{element.job}}</h4>
+                    <h5>
+                      <img src="https://www.countryflags.io/{{element.country}}/flat/64.png">
+                      <span>{{element.country_name}}</span>
+                    </h5>
+                    <h5>1 hour ago</h5>
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="job">
+              <th mat-header-cell *matHeaderCellDef> <button mat-button class="invitation_header_rejects">Reject 2</button> </th>
+              <td mat-cell *matCellDef="let element"> <button mat-button id="withdraw">Withdraw</button> </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="country">
+              <th mat-header-cell *matHeaderCellDef> <button mat-button class="invitation_header_accepts">Accept 2</button> </th>
+              <td mat-cell *matCellDef="let element">
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
         </mat-tab>
       </mat-tab-group>
     </mat-card>

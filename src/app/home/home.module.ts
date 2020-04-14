@@ -19,7 +19,6 @@ import {StoriesComponent} from './wall/stories/stories.component';
 import { RecommendComponent } from './wall/recommend/recommend.component';
 import { LastReviewComponent } from './wall/last-review/last-review.component';
 import { SponsersComponent } from './wall/sponsers/sponsers.component';
-import { TopComponent } from './wall/top/top.component';
 import { MainContentComponent } from './wall/main-content/main-content.component';
 import { LikesModalComponent } from './wall/main-content/likes-modal/likes-modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -55,6 +54,7 @@ import { InvitationAdvertiseComponent } from './invitation/invitation-advertise/
 import { InvitationMainComponent } from './invitation/invitation-main/invitation-main.component';
 import { InvitationPeopleGroupComponent } from './invitation/invitation-people-group/invitation-people-group.component';
 import { InvitationManageAllComponent } from './invitation/invitation-manage-all/invitation-manage-all.component';
+import { NotificationComponent } from './wall/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +65,6 @@ import { InvitationManageAllComponent } from './invitation/invitation-manage-all
     RecommendComponent,
     LastReviewComponent,
     SponsersComponent,
-    TopComponent,
     MainContentComponent,
     LikesModalComponent,
     SupportComponent,
@@ -84,6 +83,7 @@ import { InvitationManageAllComponent } from './invitation/invitation-manage-all
     InvitationMainComponent,
     InvitationPeopleGroupComponent,
     InvitationManageAllComponent,
+    NotificationComponent,
   ],
   imports: [
     CommonModule,
@@ -132,6 +132,10 @@ import { InvitationManageAllComponent } from './invitation/invitation-manage-all
           {
             path: 'invitation_manage_all',
             component: InvitationManageAllComponent
+          },
+          {
+            path: 'notification',
+            component: NotificationComponent
           }
         ],
       },

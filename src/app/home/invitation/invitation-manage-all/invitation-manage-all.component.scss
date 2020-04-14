@@ -28,27 +28,27 @@
   margin: 0 10px 0 10px
 }
 
-#all_invitations {
+.all_invitations {
   border: 1px solid #1181C3!important;
   color: #1181C3;
   background: white;
 }
 
-#all_invitations_table {
+.all_invitations_table {
   width: 100%;
 }
 
-::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+.all_invitations_table ::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
   background-color: #1181C3 !important;
 }
 
-.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+.all_invitations_table .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
   background: #1181C3!important;
 }
-.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+.all_invitations_table .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
   background: #1181C3!important;
 }
-#all_invitations_table th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+.all_invitations_table th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
   padding-left: 0!important;
 }
 .invitation_request {
@@ -56,13 +56,16 @@
   display: inline-flex;
   margin-left: 20px;
 }
-.invitation_request div {
+.invitation_request>div {
   float: left;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 30px;
 }
-.invitation_request h3 {
+
+.invitation_request h2 {
   cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .invitation_request>img {
@@ -72,3 +75,26 @@
   float: left;
 }
 
+.all_invitations_table h2 .mat-checkbox-frame {
+    border-radius: 50% !important;
+  }
+.all_invitations_table h2 .mat-checkbox-background {
+  border-radius: 50% !important;
+}
+.invitation_request>div>h4 {
+  color: darkgray;
+}
+.invitation_header_accepts {
+  background: #1181C3;
+  color: #ffffff;
+}
+.invitation_header_rejects {
+  border: none!important;
+}
+#mat-tab-label-0-0, #mat-tab-label-0-1 {
+  width: 50%!important;
+}
+#withdraw {
+  float: right;
+  border: none!important;
+}

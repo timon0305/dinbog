@@ -70,7 +70,41 @@
            <a><i class="fa fa-comment-o"></i></a>
          </li>
          <li>
-           <a><i class="fa fa-bell-o"></i></a>
+           <a><i class="fa fa-bell-o" [matMenuTriggerFor]="notifications"></i>
+             <div class="user_group">
+               <mat-menu #notifications="matMenu" xPosition="before" class="users">
+                 <br>
+                 <h4 id="notification_top">Mark all as read</h4>
+                 <hr>
+                 <table mat-table [dataSource]="notifi_data" class="mat-elevation-z1">
+                   <ng-container matColumnDef="message">
+                     <th mat-header-cell *matHeaderCellDef> <h2>Message</h2> </th>
+                     <td mat-cell *matCellDef="let elements" class="notification_nav">
+                       <div class="request">
+                         <img src="../../assets/faces/{{elements.avatar}}" alt="">
+                         <div>
+                           <h3>{{elements.name}}</h3>
+                           <span>{{elements.message}}</span>
+                         </div>
+                       </div>
+                     </td>
+                   </ng-container>
+
+                   <!-- Symbol Column -->
+                   <ng-container matColumnDef="days">
+                     <th mat-header-cell *matHeaderCellDef> <h2>Days</h2> </th>
+                     <td mat-cell *matCellDef="let elements">
+                       {{elements.days}} <br> <mat-checkbox class="day_check"></mat-checkbox>
+                     </td>
+                   </ng-container>
+                   <tr mat-row *matRowDef="let row; columns: notification_column;"></tr>
+                 </table>
+                 <br>
+                 <div class="see_all">
+                   <span (click)="see_all_notification()">See All</span>
+                 </div>
+               </mat-menu>
+             </div></a>
          </li>
          <li>
            <a style="display: inline-flex">

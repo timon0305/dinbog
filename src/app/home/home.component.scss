@@ -19,7 +19,6 @@
   margin-top: 16px;
 }
 
-
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .card.highlight-card span {
@@ -51,6 +50,7 @@
 .search {
   position: relative;
   display: flex;
+  width: 50%!important;
 }
 
 .searchTerm {
@@ -135,6 +135,8 @@ mat-form-field {
 }
 #mat-menu-panel-0 { max-width: 500px!important; width: 500px !important;
   height: 650px;}
+#mat-menu-panel-1 { max-width: 485px!important; width: 485px !important;
+  height: 540px;}
 table {
   width: 480px;
 }
@@ -169,6 +171,12 @@ th.mat-header-cell {
 .invite_nav>.request>img {
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.notification_nav>.request>img {
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   float: left;
 }
@@ -216,4 +224,21 @@ th>h2 {
 .search mat-form-field .mat-form-field-outline {
   height: 37px;
   margin-top: 12px;
+}
+#notification_top {
+  text-align: right;
+  margin-right: 20px;
+}
+.day_check .mat-checkbox-background {
+  background: darkgray;
+  border-radius: 50%;
+}
+.day_check .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #1181C3;
+}
+.day_check .mat-checkbox-frame {
+  border-radius: 50%!important;
+}
+.mat-form-field-wrapper .ng-tns-c105-0 {
+
 }
