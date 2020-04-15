@@ -25,6 +25,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatTableModule} from '@angular/material/table';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {IonicModule} from '@ionic/angular';
 
 
 
@@ -36,6 +38,7 @@ import {MatTableModule} from '@angular/material/table';
   ],
   imports: [
     BrowserModule,
+    IonicModule,
     AppRoutingModule,
     MatGridListModule,
     CdkStepperModule,
@@ -57,7 +60,8 @@ import {MatTableModule} from '@angular/material/table';
     MatCheckboxModule,
     MatCardModule,
     MatTableModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

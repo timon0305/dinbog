@@ -3,6 +3,8 @@ import {MatDialog} from '@angular/material/dialog';
 import {LikesModalComponent} from './likes-modal/likes-modal.component';
 import {MatTooltip} from '@angular/material/tooltip';
 import {PostComponent} from './post/post.component';
+import {SendInvitationComponent} from './send-invitation/send-invitation.component';
+import {SendMessageComponent} from './send-message/send-message.component';
 
 @Component({
   selector: 'app-main-content',
@@ -40,6 +42,26 @@ export class MainContentComponent implements OnInit {
       width: '70%',
       height: '800px',
       panelClass: 'app-full-bleed-dialog',
+      data: {}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.success = result
+    })
+  }
+
+  send_invitation(): void {
+    const dialogRef = this.dialog.open(SendInvitationComponent, {
+      width: '40%',
+      data: {}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.success = result
+    })
+  }
+
+  send_message(): void {
+    const dialogRef = this.dialog.open(SendMessageComponent, {
+      width: '40%',
       data: {}
     });
     dialogRef.afterClosed().subscribe(result => {

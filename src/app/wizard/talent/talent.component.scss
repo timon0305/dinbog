@@ -1,8 +1,22 @@
 #image {
   text-align: center;
 }
+#image>img {
+  height: 78px!important;
+}
+mat-step-header {
+  padding: 5px!important;
+}
+.mat-step-icon {
+  height: 61px!important;
+  width: 61px!important;
+}
 p, h1,h2,h3,h4,h5,h6 {
   font-family: Roboto!important;
+}
+.mat-horizontal-stepper-header-container {
+  width: 80%;
+  margin: auto;
 }
 img {
   height: 59px;
@@ -21,7 +35,7 @@ button {
   margin: auto;
   text-align: center;
 }
-h3 {
+h2 {
   color: #1181C3;
 }
 
@@ -33,14 +47,39 @@ button {
 
 #dropzone {
   text-align: center;
-  width : 250px;
+  width : 174px;
   margin: auto;
   border-radius: 50%;
 }
-#dropzone>ngx-dropzone {
+#dropzone img {
   border-radius: 50%;
+  margin: 0!important;
+  height: 140px;
+}
+#dropzone>ngx-dropzone {
+}
+#dropzone>ngx-dropzone {
+  border: none!important;
+}
+.face_all {
+  text-align: center;
+  width : 174px;
+  margin: auto;
+}
+.face_all>ngx-dropzone {
+  border: none!important;
 }
 
+.face_all img {
+  margin: 0!important;
+  height: 140px;
+}
+.face_all>ngx-dropzone {
+}
+#checkbox_video p {
+  color: gray;
+  margin-left: 20px;
+}
 #birthday_name {
   margin-right: 20px;
   font-size: 18px;
@@ -62,9 +101,15 @@ mat-form-field {
 #gender>mat-form-field {
   width: 48%;
 }
+#category>mat-form-field {
+  width: 48%;
+}
 
 #homeTown>mat-form-field {
   width: 48%;
+}
+#category button {
+  border-radius: 20px 20px 20px 20px;
 }
 
 #homeTown>span {
@@ -90,16 +135,6 @@ mat-form-field {
   display: inline-block;
 
 }
-#dropzone-4>div>span {
-  padding: 20px;
-}
-
-#dropzone-4>div>span>ngx-dropzone>ngx-dropzone-label {
-  width: 250px;
-  display: block;
-  margin-top: 34%;
-}
-
 #Talent>mat-form-field {
   width: 48%;
 }
@@ -125,6 +160,12 @@ a {
 #Video_Upload_URL>mat-form-field {
   width: 92%;
 }
+.next_step_button {
+  background: #1181C3!important;
+  color: #ffffff!important;
+  margin: 0 20px 0 20px!important;
+}
+
 
 #Video_Upload_URL>span {
   width: 100%;
@@ -169,7 +210,9 @@ div>img {
   text-align: center;
   margin: auto;
 }
-
+#mini_upload_image {
+  width: 175px!important;
+}
 mat-icon {
   color: #1181C3;
   font-size: 40px;
@@ -189,7 +232,9 @@ mat-icon {
   width: 60%;
   margin: auto;
 }
-
+mat-step mat-card {
+  box-shadow: -1px -1px 1px 2px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 6px 3px 1px rgba(0, 0, 0, 0.12) !important;
+}
 .example-container {
   width: 100%;
   margin: 10px;

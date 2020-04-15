@@ -1,0 +1,47 @@
+mat-checkbox {
+  font-family: Roboto-Regular;
+}
+.selects {
+  display: flex;
+  justify-content: space-around;
+}
+mat-form-field textarea {
+  height: 100px;;
+}
+.button-group {
+  float: right;
+  margin-top: 16px;
+}
+.button-group>.follow {
+  border: 1px solid #1181C3;
+}
+#reset {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+  margin: 0 10px 0 10px;
+}
+#submit {
+  background: #1181C3;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+mat-form-field {
+  width: 100%;
+}
+.invitation_image>img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.invite_comment>p {
+  margin: 0;
+  display: flex;
+}
+.invite_comment>p>img {
+  width: 25px;
+  height: 25px;
+}
+#reset {
+  border: 1px solid #1181C3!important;
+}

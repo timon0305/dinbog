@@ -58,13 +58,34 @@
       </div>
       <div class="truncate">
         <p>
-          <span matTooltip="Info about the action"
-                matTooltipPosition="right"
-                matTooltipClass="custom-tooltip"
-
-          >Arshly Pearson</span>
+          <span [mdePopoverTriggerFor]="appPopover"
+                mdePopoverTriggerOn="click" #popoverTrigger="mdePopoverTrigger">Arshly Pearson</span>
           | I love your style
         </p>
+        <mde-popover #appPopover="mdePopover" [mdePopoverOverlapTrigger]="false">
+          <mat-card style="max-width: 350px; width: 250px">
+            <mat-card-content>
+              <div class="comments">
+                <div class="avatar">
+                  <img src="../../../../assets/avatar/user8-128x128.jpg" alt="">
+                </div>
+                <div class="truncate">
+                  <p>
+                    <span>Arshly Pearson</span> <br> <span>Model</span>
+                  </p>
+                  <p class="sub_comments_flag">
+                    <img src="https://www.countryflags.io/ve/flat/64.png">
+                    &nbsp;
+                    <span>Venezuela</span>
+                  </p>
+                  <br>
+                  <button mat-button>connect</button>
+                  <button mat-button>follow</button>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </mde-popover>
         <p class="comment"><i class="fa fa-thumbs-up"></i>3 &nbsp;
           <span (click)="onValChange()" aria-hidden="false">Comments</span>
         </p>
@@ -77,13 +98,81 @@
         </div>
       </div>
     </div>
-
+    <div class="comments">
+      <div class="avatar">
+        <img src="../../../../assets/avatar/user4-128x128.jpg" alt="">
+      </div>
+      <div class="truncate">
+        <p>
+          <span [mdePopoverTriggerFor]="appPopover_message"
+                mdePopoverTriggerOn="click" #popoverTrigger="mdePopoverTrigger">Albanea Zenkin</span>
+          | Send me message
+        </p>
+        <mde-popover #appPopover_message="mdePopover" [mdePopoverOverlapTrigger]="false">
+          <mat-card style="max-width: 350px; width: 250px">
+            <mat-card-content>
+              <div class="comments">
+                <div class="avatar">
+                  <img src="../../../../assets/avatar/user4-128x128.jpg" alt="">
+                </div>
+                <div class="truncate">
+                  <p>
+                    <span>Albanea Zenkin</span> <br> <span>Model</span>
+                  </p>
+                  <p class="sub_comments_flag">
+                    <img src="https://www.countryflags.io/ve/flat/64.png">
+                    &nbsp;
+                    <span>Venezuela</span>
+                  </p>
+                  <br>
+                  <button mat-button (click)="send_message()">Message</button>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </mde-popover>
+        <p class="comment"><i class="fa fa-thumbs-up"></i>3 &nbsp;
+          <span (click)="onValChange()" aria-hidden="false">Comments</span>
+        </p>
+        <div *ngIf="status === true" class="comment_reply">
+          <img src="../../../../assets/avatar/avatar.jpg" alt="">
+          <mat-form-field class="example-full-width">
+            <mat-label>Comments</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
     <div class="comments">
       <div class="avatar">
         <img src="../../../../assets/avatar/user6-128x128.jpg" alt="">
       </div>
-      <div class="truncate">
-        <p>Rudy Alexandra | You are amazing</p>
+      <div class="truncate" >
+        <p [mdePopoverTriggerFor]="appPopover_other"
+           mdePopoverTriggerOn="click" #popoverTrigger="mdePopoverTrigger">Andra ShenCo | You are amazing</p>
+        <mde-popover #appPopover_other="mdePopover" [mdePopoverOverlapTrigger]="false">
+          <mat-card style="max-width: 350px; width: 250px">
+            <mat-card-content>
+              <div class="comments" style="padding-bottom: 0">
+                <div class="avatar">
+                  <img src="../../../../assets/avatar/user8-128x128.jpg" alt="">
+                </div>
+                <div class="truncate">
+                  <p>
+                    <span>Arshly Pearson</span> <br> <span>Model</span>
+                  </p>
+                  <p class="sub_comments_flag">
+                    <img src="https://www.countryflags.io/ve/flat/64.png">
+                    &nbsp;
+                    <span>Venezuela</span>
+                  </p>
+                  <br>
+                  <button mat-button (click)="send_invitation()">connect</button>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </mde-popover>
         <p><i class="fa fa-thumbs-up"></i>2 &nbsp;<a >Comments</a></p>
         <div class="sub_comments">
           <div class="avatar">

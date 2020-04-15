@@ -73,7 +73,7 @@
   border: 2px solid #896091;
   background: #ffffff;
   text-align: center;
-  color: #1045ff;
+  color: #1181C3;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
@@ -133,11 +133,13 @@ mat-form-field {
   padding: 0 10px!important;
   width: 100%!important;
 }
-#mat-menu-panel-0 { max-width: 500px!important; width: 500px !important;
-  height: 650px;}
+//#mat-menu-panel-0 { max-width: 500px!important; width: 500px !important;
+//  height: 650px;}
 #mat-menu-panel-1 { max-width: 485px!important; width: 485px !important;
-  height: 540px;}
+  height: 670px;}
 #mat-menu-panel-2 { max-width: 485px!important; width: 485px !important;
+  height: 540px;}
+#mat-menu-panel-3 { max-width: 485px!important; width: 485px !important;
   height: 540px;}
 table {
   width: 480px;
@@ -266,4 +268,13 @@ th>h2 {
 }
 .request>div>span>.fa {
   color: darkgray;
+}
+#toolbox>ul>li {
+  margin: 10px 20px 0 20px
+}
+#toolbox>ul>li>a>ion-icon {
+  font-size: 28px;
+}
+mat-menu#briefcase button>ion-icon {
+  font-size: 22px;
 }

@@ -57,6 +57,13 @@ import { InvitationManageAllComponent } from './invitation/invitation-manage-all
 import { NotificationComponent } from './wall/notification/notification.component';
 import { ChatComponent } from './chat/chat.component';
 import { ChatListComponent } from './chat/chat-list/chat-list.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {IonicModule} from '@ionic/angular';
+import {NgxDropzoneModule} from 'ngx-dropzone';
+import {MdePopoverModule} from '@material-extended/mde';
+import { SendInvitationComponent } from './wall/main-content/send-invitation/send-invitation.component';
+import { SendMessageComponent } from './wall/main-content/send-message/send-message.component';
+import { ChatGroupComponent } from './chat/chat-group/chat-group.component';
 
 @NgModule({
   declarations: [
@@ -88,12 +95,19 @@ import { ChatListComponent } from './chat/chat-list/chat-list.component';
     NotificationComponent,
     ChatComponent,
     ChatListComponent,
+    SendInvitationComponent,
+    SendMessageComponent,
+    ChatGroupComponent,
+
+
   ],
   imports: [
     CommonModule,
+    IonicModule,
     FormsModule,
     ScrollingModule,
     Ng5SliderModule,
+
 
     //Material Module
     MatFormFieldModule,
@@ -111,7 +125,9 @@ import { ChatListComponent } from './chat/chat-list/chat-list.component';
     MatTooltipModule,
     MatGridListModule,
     MatTabsModule,
-
+    FontAwesomeModule,
+    NgxDropzoneModule,
+    MdePopoverModule,
     RouterModule.forChild([
       {
         path: '',
@@ -160,7 +176,7 @@ import { ChatListComponent } from './chat/chat-list/chat-list.component';
     PortalModule,
     CdkStepperModule,
     CdkTableModule,
-    CdkTreeModule
+    CdkTreeModule,
     ],
   entryComponents: [LikesModalComponent, SupportComponent, PostComponent]
 })

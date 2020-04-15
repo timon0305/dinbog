@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {SuccessComponent} from './success/success.component';
 import {MatDialog} from '@angular/material/dialog';
@@ -21,7 +21,8 @@ interface Day {
 @Component({
   selector: 'app-talent',
   templateUrl: './talent.component.html',
-  styleUrls: ['./talent.component.scss']
+  styleUrls: ['./talent.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TalentComponent implements OnInit {
 

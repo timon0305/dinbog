@@ -1,0 +1,48 @@
+#cdk-overlay-1 {
+  position: fixed!important;
+  left: 6%!important;
+  top: 14%!important;
+}
+
+#group_image>ngx-dropzone {
+  border: none!important;
+}
+.chat_group {
+  margin-bottom: 70px;
+}
+#add_members>ion-icon {
+  font-size: 28px!important;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#add_members {
+  display: flex;
+  border-bottom: 1px solid darkgray;
+}
+#add_members>span {
+  font-size: 18px;
+}
+.members_A>img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.members_B>img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.members_A {
+  border-bottom: 1px solid darkgray;
+}
+.members_B {
+  border-bottom: 1px solid darkgray;
+}
+.members_A>h3 {
+  color: #1181C3;
+}
+.members_B>h3 {
+  color: #1181C3;
+}

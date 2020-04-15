@@ -95,6 +95,19 @@ a {
 .sub_comments {
   display: flex;
 }
+.sub_comments_flag {
+  display: flex;
+}
+.sub_comments_flag>img {
+  width: 20px;
+  height: 15px;
+}
+.truncate>button {
+  margin: 0 10px 0 0;
+  height: 37px;
+  color: white;
+  background: #1181C3;
+}
 .reply {
   width: 96%;
   margin: auto;

@@ -1,0 +1,61 @@
+.send_message {
+  text-align: center;
+}
+mat-checkbox {
+  font-family: Roboto-Regular;
+}
+.selects {
+  display: flex;
+  justify-content: space-around;
+}
+mat-form-field textarea {
+  height: 100px;;
+}
+.button-group {
+  float: right;
+  margin-top: 16px;
+}
+.button-group>.follow {
+  border: 1px solid #1181C3;
+}
+#reset {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+  margin: 0 10px 0 10px;
+}
+#submit {
+  background: #1181C3;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+mat-form-field {
+  width: 100%;
+}
+.invite_comment {
+  display: inline-block;
+}
+.invitation_image>img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.invite_comment>p {
+  margin: 0;
+  display: flex;
+}
+.invite_comment>p>img {
+  width: 25px;
+  height: 20px;
+}
+#reset {
+  border: 1px solid #1181C3!important;
+}
+.invite_comment>h3 {
+  margin: 10px
+}
+.invite_comment>h5 {
+  margin: 10px ;
+}
+.invite_comment>p {
+  margin-left: 20px;
+}

@@ -1,0 +1,77 @@
+<div class="chat_group">
+  <h3 id="close_button"><ion-icon name="close-outline"></ion-icon></h3>
+  <h3 style="text-align: center">Create Group</h3>
+  <br>
+  <div id="group_image">
+    <ngx-dropzone (change)="onSelect($event)">
+      <ngx-dropzone-label>
+        <ion-icon name="people-circle-outline"></ion-icon>
+      </ngx-dropzone-label>
+      <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+      </ngx-dropzone-preview>
+    </ngx-dropzone>
+  </div>
+</div>
+
+<div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Star Model 2018</mat-label>
+    <input matInput placeholder="Star Model 2018">
+  </mat-form-field>
+  <ion-icon name="pencil-outline"></ion-icon>
+</div>
+<br>
+<div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <input matInput placeholder="Description">
+  </mat-form-field>
+  <ion-icon name="pencil-outline"></ion-icon>
+</div>
+<br>
+
+<div id="add_members">
+  <ion-icon name="person-add-outline"></ion-icon>
+  <span> Add members </span>
+</div>
+<br>
+
+<div class="members_A">
+  <h3>A</h3>
+</div>
+<br>
+
+<div class="members_A">
+  <img src="../../../../assets/avatars/danielle.jpg" alt="">
+  <span> Arleide Costa </span>
+</div>
+<br>
+
+<div class="members_A">
+  <img src="../../../../assets/avatars/andrew.jpg" alt="">
+  <span> Arleide Martinez </span>
+</div>
+<br>
+
+<div class="members_B">
+  <h3>B</h3>
+</div>
+<br>
+
+<div class="members_B">
+  <img src="../../../../assets/avatars/joyce.jpg" alt="">
+  <span> Barbara Echeverria</span>
+</div>
+<br>
+
+<div class="members_B">
+  <img src="../../../../assets/avatars/joyce.jpg" alt="">
+  <span> Barbara Morgal Jodar </span>
+</div>
+<br>
+<div class="members_B">
+  <img src="../../../../assets/avatars/james.jpg" alt="">
+  <span> barbara Moros </span>
+</div>
+<br>

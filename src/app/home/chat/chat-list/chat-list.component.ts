@@ -1,4 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Router} from '@angular/router';
+import {MatDialog} from '@angular/material/dialog';
+import {ChatGroupComponent} from '../chat-group/chat-group.component';
 
 export interface Messages {
   avatar: string;
@@ -39,13 +42,34 @@ const message_data: Messages[] = [
   encapsulation: ViewEncapsulation.None
 })
 export class ChatListComponent implements OnInit {
-
-  constructor() { }
-
+  public success: string;
+  constructor(
+    private _router: Router,
+    private dialog: MatDialog
+  ) { }
+  files: File[] = [];
   message_column: string[] = [ 'message', 'days'];
   message_all = message_data;
 
   ngOnInit(): void {
+  }
+  onSelect(event) {
+    console.log(event);
+    this.files.push(...event.addedFiles);
+  }
+
+  onRemove(event) {
+    console.log(event);
+    this.files.splice(this.files.indexOf(event), 1);
+  }
+  create_group(): void {
+    const dialogRef = this.dialog.open(ChatGroupComponent, {
+      width: '20%',
+      data: {}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.success = result
+    })
   }
 
 }

@@ -8,6 +8,9 @@
 .post_article {
   width: 50%;
 }
+.post_article mat-card-footer {
+  margin-top: 16px;
+}
 #show_more {
   float: right;
   font-size: 14px;

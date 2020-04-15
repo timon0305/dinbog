@@ -44,7 +44,7 @@
   border-radius: 50%;
 }
 .user_status .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: #13c353;
+
   color: #13c353;
 }
 .user_status .mat-checkbox-frame {
@@ -91,4 +91,45 @@ td.active {
   color: #ffffff;
   height: 37px;
   margin-top: 12px;
+}
+.report_button {
+  display: flex;
+}
+.report_button>span>ion-icon {
+  font-size: 20px!important;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+.message-30>h4>span {
+  cursor: pointer;
+}
+
+
+#close_button {
+  float: left;
+}
+#group_image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 38%;
+}
+mat-label {
+  font-family: Roboto-Regular!important;
+}
+#chatting_list .mat-form-field-infix {
+  border: 5px;
+  margin-bottom: 5px;
+}
+#group_image ion-icon {
+  font-size: 76px;
+  color: darkgray;
+}
+#create_groups>header>ion-icon {
+  color: #1181C3;
+}
+
+#creation {
+  border-bottom: 1px solid darkgray;
 }

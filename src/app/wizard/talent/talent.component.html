@@ -2,17 +2,17 @@
     <div id="image">
       <img src="../../../assets/img/logo.svg" alt="">
     </div>
-
+  <br>
   <br>
   <mat-horizontal-stepper labelPosition="bottom" #stepper>
     <mat-step [stepControl]="firstFormGroup">
       <form [formGroup]="firstFormGroup">
-        <h3>Personal Information</h3>
+        <h2>Personal Information</h2>
 
         <div id="dropzone">
           <ngx-dropzone (change)="onSelect($event)">
-            <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
-              <br> Click Here</ngx-dropzone-label>
+            <ngx-dropzone-label><img src="../../../assets/faces/face2.jpg" alt="">
+            </ngx-dropzone-label>
             <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
               <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-preview>
@@ -24,8 +24,24 @@
         </div>
         <br>
 
+        <div id="category">
+          <mat-form-field>
+            <mat-label>Talent Category</mat-label>
+            <mat-select >
+              <mat-option value="1">Model</mat-option>
+              <mat-option value="2">Actor</mat-option>
+              <mat-option value="3">Doctor</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <br>
+          <button>Talent</button>
+          <button>Model</button>
+          <button>Doctor</button>
+        </div>
+        <br>
+
         <div id="birthday">
-          <span id="birthday_name">Birthday</span>
+          <span id="birthday_name">BIRTH DATE</span>
           <mat-form-field>
             <mat-label>Year</mat-label>
             <mat-select formControlName="year" name="year">
@@ -118,58 +134,57 @@
 
         <br>
         <div style="text-align: center">
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button class="next_step_button" matStepperNext>Next</button>
         </div>
       </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
       <form [formGroup]="secondFormGroup">
-        <h3>Your First Book</h3>
+        <h2>Your First Book</h2>
         <p>Upload your book with 3 photos or more</p>
         <br>
         <div id="dropzone-4">
           <div>
-            <span>
+            <span class="face_all">
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
-                <br> Click Here</ngx-dropzone-label>
-              <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-              </ngx-dropzone-preview>
-            </ngx-dropzone>
+                <ngx-dropzone-label><img src="../../../assets/faces/face23.jpg" alt="">
+                </ngx-dropzone-label>
+                <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                  <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-preview>
+              </ngx-dropzone>
             </span>
-            <span>
+            <span class="face_all">
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
-                <br> Click Here</ngx-dropzone-label>
-              <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-              </ngx-dropzone-preview>
-            </ngx-dropzone>
+                <ngx-dropzone-label><img src="../../../assets/faces/face5.jpg" alt="">
+                </ngx-dropzone-label>
+                <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                  <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-preview>
+              </ngx-dropzone>
             </span>
-            <span>
+            <span class="face_all">
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
-                <br> Click Here</ngx-dropzone-label>
-              <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-              </ngx-dropzone-preview>
-            </ngx-dropzone>
+                <ngx-dropzone-label><img src="../../../assets/faces/face26.jpg" alt="">
+                </ngx-dropzone-label>
+                <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                  <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-preview>
+              </ngx-dropzone>
             </span>
-            <span>
+            <span class="face_all">
               <ngx-dropzone (change)="onSelect($event)">
-              <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
-                <br> Click Here</ngx-dropzone-label>
-              <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-              </ngx-dropzone-preview>
-            </ngx-dropzone>
+                <ngx-dropzone-label><img src="../../../assets/faces/face2.jpg" alt="">
+                </ngx-dropzone-label>
+                <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                  <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-preview>
+              </ngx-dropzone>
             </span>
           </div>
         </div>
         <br>
         <br>
-
         <div id="Talent">
           <mat-form-field>
             <mat-label>Talent Category</mat-label>
@@ -202,13 +217,13 @@
         <br>
         <div style="text-align: center">
           <a>Skip</a>
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button class="next_step_button" matStepperNext>Next</button>
         </div>
       </form>
     </mat-step>
     <mat-step [stepControl]="thirdFormGroup">
       <form [formGroup]="thirdFormGroup">
-        <h3>Your First Video</h3>
+        <h2>Your First Video</h2>
         <br>
         <mat-tab-group mat-align-tabs="center">
           <mat-tab label="Video URL">
@@ -253,7 +268,7 @@
         <div id="checkbox_video">
           <div>
             <img src="../../../assets/img/youtube.png" alt="">
-            <img src="../../../assets/img/video.png">
+            <img src="../../../assets/img/v.png">
           </div>
           <br>
           <mat-checkbox>Privacy</mat-checkbox>
@@ -262,13 +277,13 @@
         <br>
         <div style="text-align: center">
           <a>Skip</a>
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button class="next_step_button" matStepperNext>Next</button>
         </div>
       </form>
     </mat-step>
     <mat-step [stepControl]="forthFormGroup">
       <form [formGroup]="forthFormGroup">
-        <h3>Your First Work</h3>
+        <h2>Your First Work</h2>
 
         <br><br>
         <div id="work">
@@ -295,15 +310,15 @@
         <br><br>
         <div style="text-align: center">
           <a>Skip</a>
-          <button mat-raised-button color="primary" matStepperNext>Next</button>
+          <button mat-raised-button class="next_step_button" matStepperNext>Next</button>
         </div>
       </form>
     </mat-step>
     <mat-step>
-      <h3>Your First Music Album </h3><br>
+      <h2>Your First Music Album </h2><br>
       <div id="Album_Upload">
         <ngx-dropzone (change)="onSelect($event)">
-          <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+          <ngx-dropzone-label><img src="../../../assets/img/upload.png" alt="">
             <br> Upload Album Cover</ngx-dropzone-label>
           <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
@@ -329,8 +344,8 @@
         <mat-card-header>
           <mat-drawer-container class="example-container">
             <mat-drawer mode="side" opened>
-              <ngx-dropzone (change)="onSelect($event)">
-                <ngx-dropzone-label><mat-icon aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+              <ngx-dropzone id="mini_upload_image" (change)="onSelect($event)">
+                <ngx-dropzone-label><img src="../../../assets/img/upload.png" alt="">
                   <br> Upload Cover</ngx-dropzone-label>
                 <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                   <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
@@ -351,7 +366,7 @@
           </mat-drawer-container>
         </mat-card-header>
         <br>
-        <button mat-button>Uploads your track</button>
+        <button mat-button class="next_step_button">Uploads your track</button>
         <br>
         <mat-card-content>
           <mat-form-field class="example-full-width">
@@ -367,7 +382,7 @@
       <br><br>
       <div style="text-align: center">
         <a>Skip</a>
-        <button mat-raised-button color="#1181C3" (click)="talent_Success()">Next Step</button>
+        <button mat-raised-button class="next_step_button"(click)="talent_Success()">Next Step</button>
       </div>
     </mat-step>
   </mat-horizontal-stepper>

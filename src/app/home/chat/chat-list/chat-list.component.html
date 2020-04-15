@@ -1,16 +1,56 @@
 <mat-card>
   <div class="row" id="message_title">
     <div class="message-30">
-      <h4>Message <i class="fa fa-ellipsis-h fa-8x"></i></h4>
+      <h4><span [matMenuTriggerFor]="create_groups">Messaging</span>  <i class="fa fa-ellipsis-h fa-8x" [matMenuTriggerFor]="message_reports"></i></h4>
     </div>
+    <mat-menu #create_groups="matMenu" id="create_groups">
+
+    </mat-menu>
+
+
+    <mat-menu #message_reports="matMenu">
+      <button mat-menu-item class="report_button">
+        <span><ion-icon name="people-outline"></ion-icon></span>
+        <span (click)="create_group()">Create group</span>
+      </button>
+      <button mat-menu-item class="report_button">
+        <span><ion-icon name="folder-open-outline"></ion-icon></span>
+        <span>Archives</span>
+      </button>
+      <button mat-menu-item class="report_button">
+        <span><ion-icon name="warning-outline"></ion-icon></span>
+        <span>Spam</span>
+      </button>
+      <button mat-menu-item class="report_button">
+        <span><ion-icon name="close-circle-outline"></ion-icon></span>
+        <span>Blocked</span>
+      </button>
+    </mat-menu>
+
     <div class="message-70">
-      <h4>Jomag Herredia Model at Prestige <i class="fa fa-ellipsis-h fa-8x"></i></h4>
+      <h4>Jomag Herredia Model at Prestige
+        <i class="fa fa-ellipsis-h fa-8x" [matMenuTriggerFor]="reports"></i>
+      </h4>
+      <mat-menu #reports="matMenu">
+        <button mat-menu-item class="report_button">
+          <span><ion-icon name="remove-circle-outline"></ion-icon></span>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item class="report_button">
+          <span><ion-icon name="warning-outline"></ion-icon></span>
+          <span>Mark as Spam</span>
+        </button>
+        <button mat-menu-item class="report_button">
+          <span><ion-icon name="close-circle-outline"></ion-icon></span>
+          <span>Block</span>
+        </button>
+      </mat-menu>
     </div>
   </div>
   <div class="row">
     <div class="message-30" id="chatting_list">
       <mat-form-field class="example-full-width">
-        <mat-label><i class="fa fa-search">Search messages</i></mat-label>
+        <mat-label><ion-icon name="search-outline"></ion-icon>Search messages</mat-label>
         <input matInput placeholder="Search messages">
       </mat-form-field>
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">

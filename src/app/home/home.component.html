@@ -14,14 +14,33 @@
      <div id="toolbox">
        <ul class="navigation-items">
          <li>
-           <a><i class="fa fa-music"></i></a>
+           <a><ion-icon name="musical-notes-outline"></ion-icon></a>
          </li>
          <li>
-           <a><i class="fa fa-briefcase"></i></a>
+           <a><ion-icon name="briefcase-outline" [matMenuTriggerFor]="menu_briefcase"></ion-icon>
+             <mat-menu #menu_briefcase="matMenu" xPosition="before">
+               <button mat-menu-item class="report_button">
+                 <span><ion-icon name="card-outline"></ion-icon></span>
+                 <span>Casting</span>
+               </button>
+               <button mat-menu-item class="report_button">
+                 <span><ion-icon name="calendar-outline"></ion-icon></span>
+                 <span>Event</span>
+               </button>
+               <button mat-menu-item class="report_button">
+                 <span><ion-icon name="book-outline"></ion-icon></span>
+                 <span>Want Ads</span>
+               </button>
+               <button mat-menu-item class="report_button">
+                 <span><ion-icon name="trophy-outline"></ion-icon></span>
+                 <span>Contest</span>
+               </button>
+             </mat-menu>
+           </a>
          </li>
          <li>
            <a>
-             <i class="fa fa-user-md" [matMenuTriggerFor]="menu_support"></i>
+             <ion-icon name="people-outline" [matMenuTriggerFor]="menu_support"></ion-icon>
              <div class="user_group">
                <mat-menu #menu_support="matMenu" xPosition="before" class="users">
                  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -67,7 +86,8 @@
            </a>
          </li>
          <li>
-           <a><i class="fa fa-comment-o" [matMenuTriggerFor]="my_messages"></i>
+           <a>
+             <ion-icon name="chatbox-outline" [matMenuTriggerFor]="my_messages"></ion-icon>
              <div class="user_group">
                <mat-menu #my_messages="matMenu" xPosition="before" class="users">
                  <br>
@@ -104,7 +124,8 @@
              </div></a>
          </li>
          <li>
-           <a><i class="fa fa-bell-o" [matMenuTriggerFor]="notifications"></i>
+           <a>
+             <ion-icon name="notifications-outline" [matMenuTriggerFor]="notifications"></ion-icon>
              <div class="user_group">
                <mat-menu #notifications="matMenu" xPosition="before" class="users">
                  <br>
@@ -140,7 +161,7 @@
                </mat-menu>
              </div></a>
          </li>
-         <li>
+         <li id="user">
            <a style="display: inline-flex">
              <img src="../../assets/avatar/avatar.jpg" alt="">
              <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
@@ -169,7 +190,6 @@
                </button>
              </mat-menu>
            </a>
-
          </li>
        </ul>
      </div>
