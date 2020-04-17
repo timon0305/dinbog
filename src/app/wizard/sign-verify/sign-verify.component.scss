@@ -1,0 +1,25 @@
+#sign_verify {
+  margin-top: 100px;
+  text-align: center;
+}
+#sign_verify mat-card {
+  width: 50%;
+  margin: auto;
+  padding: 40px;
+}
+#sign_verify mat-card mat-card-header {
+  text-align: center;
+}
+#sign_verify h1 mat-icon {
+  color: #1181C3;
+  font-size: 60px;
+}
+#sign_verify button {
+  background: #1181C3;
+  color: white;
+}
+#sign_verify #verify_button {
+  border: 1px solid #1181C3!important;
+  color: #1181C3!important;
+  background-color: #fff;
+}

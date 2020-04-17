@@ -64,6 +64,7 @@ import {MdePopoverModule} from '@material-extended/mde';
 import { SendInvitationComponent } from './wall/main-content/send-invitation/send-invitation.component';
 import { SendMessageComponent } from './wall/main-content/send-message/send-message.component';
 import { ChatGroupComponent } from './chat/chat-group/chat-group.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -107,7 +108,7 @@ import { ChatGroupComponent } from './chat/chat-group/chat-group.component';
     FormsModule,
     ScrollingModule,
     Ng5SliderModule,
-
+    FlexLayoutModule,
 
     //Material Module
     MatFormFieldModule,
@@ -128,6 +129,7 @@ import { ChatGroupComponent } from './chat/chat-group/chat-group.component';
     FontAwesomeModule,
     NgxDropzoneModule,
     MdePopoverModule,
+
     RouterModule.forChild([
       {
         path: '',

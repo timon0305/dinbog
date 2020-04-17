@@ -9,6 +9,12 @@
 mat-card-header>mat-form-field {
   width: 100%;
 }
+.main-content .mat-card-image {
+  margin-bottom: 0!important;
+}
+.main-content .mat-card-actions {
+  padding-top: 0!important;
+}
 .photo_upload>button {
   background: white;
   height: 27.4px;
@@ -107,6 +113,10 @@ a {
   height: 37px;
   color: white;
   background: #1181C3;
+}
+#follow_button {
+  padding-left: 26px;
+  padding-right: 26px;
 }
 .reply {
   width: 96%;

@@ -8,6 +8,14 @@
     width: 25%;
     margin: 0 0 0 5px
   }
+  .mat-side-bar {
+    width: 25%;
+    margin: 0 10px 0 10px
+  }
+  .main-content {
+    width: 75%;
+    margin: 0 10px 0 10px
+  }
 }
 
 @media (max-width: 900px) {
@@ -19,14 +27,36 @@
     width: 100%;
     margin: 0 0 0 5px
   }
+  .mat-side-bar {
+    width: 25%;
+    margin: 0 10px 0 10px
+  }
+  .main-content {
+    width: 75%;
+    margin: 0 10px 0 10px
+  }
 }
-.mat-side-bar {
-  width: 25%;
-  margin: 0 10px 0 10px
-}
-.main-content {
-  width: 75%;
-  margin: 0 10px 0 10px
+
+@media (max-width: 700px) {
+  .row {
+    display: block;
+  }
+  .mat-main-content {
+    width: 100%;
+    margin: auto;
+  }
+  .mat-advertise {
+    width: 60%;
+    margin: auto;
+  }
+  .mat-side-bar {
+    width: 60%;
+    margin: auto;
+  }
+  .main-content {
+    width: 100%;
+    margin: auto;
+  }
 }
 #notification_table {
   width: 100%;

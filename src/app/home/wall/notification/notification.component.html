@@ -1,46 +1,50 @@
-<div class="row">
-  <div class="mat-main-content row">
-    <div class="mat-side-bar">
-      <app-model></app-model>
+<div id="main">
+  <div class="mat-main-content">
+    <div class="row">
+      <div class="mat-side-bar">
+        <app-model></app-model>
+        <br>
+        <app-advanced-search></app-advanced-search>
+      </div>
       <br>
-      <app-advanced-search></app-advanced-search>
-    </div>
-    <div class="main-content">
-      <mat-card>
-        <h1>Your notifications</h1>
-        <hr>
-        <table mat-table [dataSource]="notifi_data" id="notification_table">
-          <ng-container matColumnDef="message">
-            <th mat-header-cell *matHeaderCellDef> <h2>Message</h2> </th>
-            <td mat-cell *matCellDef="let elements" class="notification_nav">
-              <div class="request">
-                <img src="../../assets/faces/{{elements.avatar}}" alt="">
-                <div>
-                  <div style="display: flex">
-                    <h3>{{elements.name}}</h3> &nbsp;
-                    <span>{{elements.message}}</span>
-                  </div>
-                  <br>
+      <div class="main-content">
+        <mat-card>
+          <h1>Your notifications</h1>
+          <hr>
+          <table mat-table [dataSource]="notifi_data" id="notification_table">
+            <ng-container matColumnDef="message">
+              <th mat-header-cell *matHeaderCellDef> <h2>Message</h2> </th>
+              <td mat-cell *matCellDef="let elements" class="notification_nav">
+                <div class="request">
+                  <img src="../../assets/faces/{{elements.avatar}}" alt="">
                   <div>
-                    {{elements.days}}
+                    <div style="display: flex">
+                      <h3>{{elements.name}}</h3> &nbsp;
+                      <span>{{elements.message}}</span>
+                    </div>
+                    <br>
+                    <div>
+                      {{elements.days}}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </td>
-          </ng-container>
+              </td>
+            </ng-container>
 
-          <!-- Symbol Column -->
-          <ng-container matColumnDef="days">
-            <th mat-header-cell *matHeaderCellDef> <h2>Days</h2> </th>
-            <td mat-cell *matCellDef="let elements">
-              <button mat-button class="notification_follow">follow</button>
-            </td>
-          </ng-container>
-          <tr mat-row *matRowDef="let row; columns: notification_column;"></tr>
-        </table>
-      </mat-card>
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="days">
+              <th mat-header-cell *matHeaderCellDef> <h2>Days</h2> </th>
+              <td mat-cell *matCellDef="let elements">
+                <button mat-button class="notification_follow">follow</button>
+              </td>
+            </ng-container>
+            <tr mat-row *matRowDef="let row; columns: notification_column;"></tr>
+          </table>
+        </mat-card>
+      </div>
     </div>
   </div>
+  <br>
   <div class="mat-advertise">
     <app-stories></app-stories>
     <br>

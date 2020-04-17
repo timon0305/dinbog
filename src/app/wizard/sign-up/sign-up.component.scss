@@ -1,0 +1,36 @@
+#signup_component>button {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+  background: transparent;
+}
+#signup_component>button ion-icon {
+  margin-right: 10px;
+}
+#signup_component>h3 {
+  color: #1181C3;
+}
+#sign_form {
+  width: 40%;
+  margin: auto;
+}
+#sign_form>mat-form-field {
+  width: 100%;
+}
+#sign_form .mat-form-field-infix  {
+  display: flex!important;
+  position: relative;
+  flex: auto;
+  min-width: 0;
+  width: 180px;
+}
+#sign_confirm {
+  float: left;
+}
+#sign_register {
+  text-align: center;
+}
+#sign_register button {
+  background: #1181C3;
+  color: white;
+  width: 200px;
+}

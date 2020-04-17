@@ -1,5 +1,5 @@
 @import '~@angular/material/grid-list/_grid-list-theme.scss';
-.toolbar {
+#landing_toolbar {
   position: fixed;
   height: 67px;
   width: 100%;
@@ -10,13 +10,14 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #000000;
   font-weight: 600;
   box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.07);
 }
-.container>img {
+#landing_toolbar>.container>img {
   height: 39px;
   margin-top: 16px;
+  filter: invert(100%);
 }
 #main {
   display: inline-flex;
@@ -228,9 +229,9 @@ td {
   padding: 10px 0 10px  0!important;
 }
 h3, h4, h5 {
-     margin-top: 0;
-     margin-bottom: 0;
-   }
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .avatar_info>div>div {
   margin-left: 20px;
 }
@@ -277,35 +278,93 @@ th>h2 {
   text-align: right;
   margin-right: 20px;
 }
-.day_check .mat-checkbox-background {
-  background: darkgray;
-  border-radius: 50%;
-}
-.day_check .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: #1181C3;
-}
-.day_check .mat-checkbox-frame {
-  border-radius: 50%!important;
-}
-.message_check .mat-checkbox-background {
-  background: darkgray;
-  border-radius: 50%;
-}
-.message_check .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: #1181C3;
-}
-.message_check .mat-checkbox-frame {
-  border-radius: 50%!important;
-}
+
 .request>div>span>.fa {
   color: darkgray;
 }
 #toolbox>ul>li {
   margin: 10px 20px 0 20px
 }
-#toolbox>ul>li>a>ion-icon {
-  font-size: 28px;
+#toolbox>ul>li>a>span {
+  font-size: 16px;
+  color: #ffffff;
 }
-mat-menu#briefcase button>ion-icon {
-  font-size: 22px;
+#login {
+  border: 1px solid white;
+  padding: 10px;
+
+}
+#landing {
+  background: url('../../assets/img/armchair-art-chair-696407-300x200.jpg') repeat;
+  height: 1000px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+#landing>.container {
+  margin: auto;
+  top: 20%;
+  left: 5%;
+  position: absolute;
+  right: 5%;
+  display: flex;
+}
+@media (min-width: 1300px) {
+  #logo_title {
+    width: 70%;
+    margin-right: 50px;
+  }
+  #logo_button {
+    width: 30%;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  #landing>.container {
+    display: block;
+  }
+}
+#logo_title span {
+  color: #1181C3;
+}
+#logo_title h1  {
+  color: #ffffff;
+  font-size: 46px;
+}
+#logo_button span {
+  color: #1181C3;
+}
+#logo_title ul>li {
+  color: #1181C3;
+  font-size: 30px;
+  padding: 16px;
+}
+#logo_title ul>li>span {
+  color: #ffffff;
+}
+#logo_button h2 {
+  color: #ffffff;
+  font-size: 40px;
+}
+#logo_button span {
+  color: #1181C3;
+}
+#talent {
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+#talent_button {
+  padding-left: 26px!important;
+  padding-right: 26px!important;
+  color: #1181C3;
+}
+#company {
+  border: 4px solid white;
+  height: 100px;
+  width: 100px;
+}
+#company_button {
+  background: #1181C3;
+  color: #ffffff;
 }

@@ -85,7 +85,7 @@ export class HomeComponent implements OnInit {
 
   Support(): void {
     const dialogRef = this.dialog.open(SupportComponent, {
-      width: '40%',
+      width: '600px',
       data: {}
     });
     dialogRef.afterClosed().subscribe(result => {

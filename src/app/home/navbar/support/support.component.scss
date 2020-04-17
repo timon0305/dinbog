@@ -1,11 +1,24 @@
 mat-checkbox {
   font-family: Roboto-Regular;
 }
-.selects {
-  display: flex;
-  justify-content: space-around;
+@media (min-width: 800px) {
+  .selects {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-mat-form-field textarea {
+@media (max-width: 800px) {
+  .selects {
+    display: block;
+    justify-content: space-around;
+  }
+}
+
+#support mat-form-field {
+  width: 100%;
+  margin: auto;
+}
+mat-form-field textarea  {
   height: 100px;;
 }
 .button-group {

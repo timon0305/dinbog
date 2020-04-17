@@ -20,10 +20,20 @@
     margin: auto;
   }
 }
-
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .search-side-bar {
     width: 18.75%;
+    margin: 0 10px 0 10px
+  }
+  .search-content {
+    width: 70%;
+    margin: 0 10px 0 10px
+  }
+}
+
+@media (max-width: 1000px) {
+  .search-side-bar {
+    width: 30%;
     margin: 0 10px 0 10px
   }
   .search-content {
@@ -34,20 +44,12 @@
 
 @media (max-width: 900px) {
   .search-side-bar {
-    width: 18.75%;
+    width: 50%;
     margin: 0 10px 0 10px
   }
   .search-content {
-    width: 70%;
+    width: 50%;
     margin: 0 10px 0 10px
   }
 
-}
-.search-side-bar {
-  width: 18.75%;
-  margin: 0 10px 0 10px
-}
-.search-content {
-  width: 70%;
-  margin: 0 10px 0 10px
 }

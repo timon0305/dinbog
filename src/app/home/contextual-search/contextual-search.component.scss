@@ -1,10 +1,28 @@
-.contextual_search_main {
-  width: 75%;
-  margin: 0 10px 0 0;
+@media (min-width: 900px) {
+  .contextual_search_main {
+    width: 75%;
+    margin: 0 10px 0 0;
+  }
+  .contextual_search_advertise {
+    width: 25%;
+    margin: 0 10px 0 10px
+  }
 }
-.contextual_search_advertise {
-  width: 25%;
-  margin: 0 10px 0 10px
+@media (max-width: 900px) {
+  .row {
+    display: block;
+  }
+  .contextual_search_main {
+    width: 100%;
+    margin: 0 10px 0 0;
+  }
+  .contextual_nav {
+    text-align: center;
+  }
+  .contextual_search_advertise {
+    width: 60%;
+    margin: auto;
+  }
 }
 .contextual_nav {
   background: white;
@@ -13,9 +31,23 @@
 .tab_nav{
   display: inline-flex;
 }
-.tab_nav div {
-  width: 160px;
-  text-align: center;
+@media (min-width: 900px) {
+  .tab_nav div {
+    width: 160px;
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .tab_nav div {
+    width: 100px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .tab_nav div {
+    width: 80px;
+    text-align: center;
+  }
 }
 .tab_nav div.active {
   border-bottom: 3px solid #1181C3;

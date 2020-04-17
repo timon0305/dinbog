@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TalentComponent } from './wizard/talent/talent.component';
 import {MatGridListModule} from "@angular/material/grid-list";
-import {  MatStepperModule} from '@angular/material/stepper';
+import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MatButtonModule} from "@angular/material/button";
@@ -27,6 +31,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatTableModule} from '@angular/material/table';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {IonicModule} from '@ionic/angular';
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -34,20 +39,24 @@ import {IonicModule} from '@ionic/angular';
   declarations: [
     AppComponent,
     TalentComponent,
-    HomeComponent
+    HomeComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
     IonicModule,
     AppRoutingModule,
-    MatGridListModule,
     CdkStepperModule,
     MatStepperModule,
     FormsModule,
-    MatButtonModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgxDropzoneModule,
+    FlexLayoutModule,
+
+    MatButtonModule,
+    MatStepperModule,
+    MatGridListModule,
     MatSelectModule,
     MatSlideToggleModule,
     MatSliderModule,
@@ -62,9 +71,21 @@ import {IonicModule} from '@ionic/angular';
     MatTableModule,
     FlexLayoutModule,
     FontAwesomeModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      // loader: {
+      //   provide: TranslateLoader,
+      //   // useFactory: HttpLoaderFactory,
+      //   deps: [HttpClient]
+      // }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [AppComponent],
 })
 export class AppModule { }
+
+// export function HttpLoaderFactory(http: HttpClient) {
+//   return new TranslateHttpLoader(http)
+// }

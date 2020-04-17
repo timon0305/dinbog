@@ -1,0 +1,21 @@
+<script src="sign-verify.component.ts"></script>
+<div id="sign_verify">
+  <mat-card>
+    <h1>
+      <mat-icon>check_circle_outline</mat-icon>
+    </h1>
+    <h2>Activate your account</h2>
+    <mat-card-content>
+      <h4>We have sent you an email, Please check your inbox and click on the verification link.</h4>
+      <p>
+        You have not received the email? Check spam folder.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Send email again</button>
+      <br><br>
+      <button mat-button id="verify_button" (click)="verify_later()">Verify Later</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

@@ -1,9 +1,42 @@
-.message-30 {
-  width: 30%;
-  margin-bottom: 10px;
+@media (min-width: 800px) {
+  .message-30 {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .message-70 {
+    width: 70%;
+  }
+  .message_input {
+    position: absolute;
+    bottom: 10px;
+    width: 63%;
+    margin: auto;
+    display: flex;
+  }
+  .message_input>mat-form-field {
+    width: 80%;
+    margin: auto;
+  }
 }
-.message-70 {
-  width: 70%;
+@media (max-width: 800px) {
+  .message-30 {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .message-70 {
+    width: 50%;
+  }
+  .message_input {
+    position: absolute;
+    bottom: 10px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+  }
+  .message_input>mat-form-field {
+    width: 80%;
+    margin: auto;
+  }
 }
 .message-30>h4>.fa-ellipsis-h {
   float: right;
@@ -75,17 +108,7 @@
 td.active {
   border-left: 3px solid #1181C3;
 }
-.message_input {
-  position: absolute;
-  bottom: 10px;
-  width: 63%;
-  margin: auto;
-  display: flex;
-}
-.message_input>mat-form-field {
-  width: 80%;
-  margin: auto;
-}
+
 #message_post {
   background: #1181C3;
   color: #ffffff;

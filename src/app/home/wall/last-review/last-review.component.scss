@@ -65,7 +65,7 @@ mat-card-content>img {
     text-overflow: ellipsis;
   }
   .name {
-    width: 164px;
+    width: 50%;
   }
 }
 @media (max-width: 1200px) {
@@ -76,7 +76,7 @@ mat-card-content>img {
     text-overflow: ellipsis;
   }
   .name {
-    width: 100px;
+    width: 50%;
   }
 }
 @media (max-width: 999px) {
@@ -87,6 +87,6 @@ mat-card-content>img {
     text-overflow: ellipsis;
   }
   .name {
-    width: 90px;
+    width: 50%;
   }
 }

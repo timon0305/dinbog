@@ -1,0 +1,47 @@
+<div id="signup_component">
+  <h3>Register Information</h3>
+  <button mat-button>
+    <ion-icon name="logo-facebook"></ion-icon>Sign up with Facebook
+  </button>
+  <br><br>
+  <div id="sign_form">
+    <mat-form-field class="example-full-width">
+      <mat-label>First name</mat-label>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Last name</mat-label>
+      <input matInput placeholder="Last name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password">
+      <ion-icon name="eye-outline"></ion-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Confirm Password</mat-label>
+      <input matInput placeholder="Confirm Password">
+      <ion-icon name="eye-outline"></ion-icon>
+    </mat-form-field>
+    <br>
+    <br>
+    <div id="sign_confirm">
+      <mat-checkbox>I have read and accept the Terms and Conditions</mat-checkbox>
+    </div>
+    <br>
+    <br>
+    <br>
+
+  </div>
+  <div id="sign_register">
+    <button mat-button (click)="sign_register()">Register</button>
+  </div>
+</div>

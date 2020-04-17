@@ -1,8 +1,27 @@
-.chat_main {
-  width: 75%;
-  margin: 0 10px 0 0;
+@media (min-width: 1000px) {
+  .chat_main {
+    width: 75%;
+    margin: 0 10px 0 0;
+  }
+  .chat_advertise {
+    width: 25%;
+    margin: 0 10px 0 10px
+  }
+  #chat {
+    display: inline-flex;
+  }
 }
-.chat_advertise {
-  width: 25%;
-  margin: 0 10px 0 10px
+
+@media (max-width: 1000px) {
+  .chat_main {
+    width: 100%;
+    margin: auto;
+  }
+  .chat_advertise {
+    width: 60%;
+    margin: auto;
+  }
+  #chat {
+    display: block;
+  }
 }

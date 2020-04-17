@@ -14,11 +14,14 @@
 }
 .unfollowing button {
   background: #1181C3;
+  padding-left: 26px!important;
+  padding-right: 26px!important;
   color: white;
 }
 .following button {
   background: white;
   color: #1181C3;
+
   border: 1px solid #1181C3!important;
 }
 .follows>.avatar_info>div>img {
