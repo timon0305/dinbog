@@ -3,6 +3,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {SupportComponent} from './navbar/support/support.component';
 import {Router} from '@angular/router';
 import {Message} from '@angular/compiler/src/i18n/i18n_ast';
+import {TranslateService} from '@ngx-translate/core';
 
 export interface PeriodicElement {
   country_name: string;
@@ -68,8 +69,16 @@ export class HomeComponent implements OnInit {
   private success: string;
   constructor(
     private dialog: MatDialog,
-    private _router: Router
-    ) { }
+    private _router: Router,
+    public translate: TranslateService
+    ) {
+    translate.addLangs(['en', 'es']);
+    translate.setDefaultLang('en');
+  }
+
+  switchLang(lang: string) {
+    this.translate.use(lang)
+  }
 
   displayedColumns: string[] = ['name', 'job', 'country'];
   dataSource = ELEMENT_DATA;

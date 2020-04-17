@@ -74,11 +74,11 @@ import {WizardComponent} from './wizard/wizard.component';
     FontAwesomeModule,
     HttpClientModule,
     TranslateModule.forRoot({
-      // loader: {
-      //   provide: TranslateLoader,
-      //   // useFactory: HttpLoaderFactory,
-      //   deps: [HttpClient]
-      // }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
     })
   ],
   providers: [],
@@ -87,6 +87,6 @@ import {WizardComponent} from './wizard/wizard.component';
 })
 export class AppModule { }
 
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http)
-// }
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http)
+}

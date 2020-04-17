@@ -13,7 +13,15 @@
           </li>
           <li>
             <a>
-              <span>EN | EP</span>
+              <span>
+                <select #selectedLang (change)="switchLang(selectedLang.value)">
+                  <option *ngFor="let language of translate.getLangs()"
+                    [value]="language" [selected]="language === translate.currentLang"
+                  >
+                    {{language}}
+                  </option>
+                </select>
+              </span>
             </a>
           </li>
         </ul>

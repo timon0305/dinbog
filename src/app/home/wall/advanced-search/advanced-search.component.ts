@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 
 interface Food {
   value: string;
@@ -19,8 +20,11 @@ export class AdvancedSearchComponent implements OnInit {
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
   constructor(
-    private _router: Router
-  ) { }
+    private _router: Router,
+    // public translate: TranslateService
+  ) {
+  }
+
 
   ngOnInit(): void {
 

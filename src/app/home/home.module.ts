@@ -65,6 +65,10 @@ import { SendInvitationComponent } from './wall/main-content/send-invitation/sen
 import { SendMessageComponent } from './wall/main-content/send-message/send-message.component';
 import { ChatGroupComponent } from './chat/chat-group/chat-group.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient} from '@angular/common/http';
+import {httpTranslateLoader} from '../app.module';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -166,8 +170,16 @@ import {FlexLayoutModule} from '@angular/flex-layout';
         ],
       },
 
-    ])
+    ]),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
+
   exports: [
     // CDK
     A11yModule,
@@ -183,3 +195,4 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   entryComponents: [LikesModalComponent, SupportComponent, PostComponent]
 })
 export class HomeModule { }
+

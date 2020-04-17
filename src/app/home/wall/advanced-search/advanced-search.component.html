@@ -27,7 +27,7 @@
       <input matInput placeholder="Name of Talent" >
     </mat-form-field>
 
-    <p>Gender</p>
+    <p>{{'gender' | translate}}</p>
     <p class="checkbox">
       <mat-checkbox>Female</mat-checkbox>
       <mat-checkbox>Male</mat-checkbox>
@@ -44,7 +44,7 @@
     <br>
     <p>Location</p>
     <mat-form-field>
-      <mat-label>Born Country</mat-label>
+      <mat-label>{{'bornCountry' | translate}}</mat-label>
       <mat-select>
         <mat-option *ngFor="let food of foods" [value]="food.value">
           {{food.viewValue}}
@@ -53,7 +53,7 @@
     </mat-form-field>
 
     <mat-form-field>
-      <mat-label>Residence Country</mat-label>
+      <mat-label>{{'residenceCountry' | translate}}</mat-label>
       <mat-select>
         <mat-option *ngFor="let food of foods" [value]="food.value">
           {{food.viewValue}}
