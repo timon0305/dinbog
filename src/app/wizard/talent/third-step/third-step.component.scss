@@ -1,0 +1,45 @@
+#third_step>form>h4 {
+  color: #1181C3;
+}
+#third_step {
+  width: 60%;
+  margin: auto;
+}
+#third_step>form>mat-tab-group {
+  width: 60%;
+  margin: auto;
+}
+#Video_Upload_URL>mat-form-field {
+  margin: auto;
+  width: 100%;
+}
+#Video_Upload img {
+  width: 480px;
+  height: 130px;
+  border: 3px solid darkgray;
+}
+#Video_Upload>ngx-dropzone {
+  border: none!important;
+}
+#checkbox_video {
+  width: 60%;
+  margin: auto;
+}
+#checkbox_video>div {
+  width: 100%;
+}
+#checkbox_video>div>img {
+  float: left;
+}
+#checkbox_video>div>mat-checkbox {
+  float: left;
+}
+#checkbox_video>div>p {
+  float: left;
+  margin-left: 30px;
+  width: 100%;
+  text-align: left;
+}
+#next_step_button {
+  display: inline-block!important;
+}

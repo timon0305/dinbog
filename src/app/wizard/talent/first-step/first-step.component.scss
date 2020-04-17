@@ -1,0 +1,49 @@
+#first_step {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+#first_step div>mat-form-field {
+  width: 100%;
+}
+#dropzone img {
+  border: 3px solid darkgray;
+}
+#first_step>form>h2 {
+  color: #1181C3;
+}
+#birthday>mat-form-field {
+  width: 25%!important;
+}
+#birthday {
+  width: 90%;
+  margin: auto;
+}
+#birthday h4 {
+  margin-top: 50px;
+  color: #1181C3;
+}
+#first_step .first_step_form>span {
+  float: left;
+  margin-left: 30px;
+  color: #1181C3;
+}
+#birthday {
+  display: flex;
+}
+#talent_button_group {
+  display: flex;
+}
+#talent_button_group button {
+  border-radius: 18px 18px 18px 18px;
+  height: 30px;
+}
+#first_step .first_step_form>mat-slide-toggle {
+  float: right;
+}
+.next_step_button>button {
+  background: #1181C3;
+  color: #ffffff;
+  padding: 0 50px 0 50px;
+  margin-left: 30px;
+}

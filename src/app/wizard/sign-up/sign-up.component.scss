@@ -18,10 +18,9 @@
 }
 #sign_form .mat-form-field-infix  {
   display: flex!important;
-  position: relative;
-  flex: auto;
-  min-width: 0;
-  width: 180px;
+}
+#sign_form mat-form-field ion-icon {
+  float: right;
 }
 #sign_confirm {
   float: left;

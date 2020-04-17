@@ -1,0 +1,84 @@
+<div id="second_step">
+  <form [formGroup]="secondFormGroup">
+    <h2>Your First Book</h2>
+    <p>Upload your book with 3 photos or more</p>
+    <br>
+    <div id="dropzone-4">
+      <div>
+        <span class="face_all">
+          <ngx-dropzone (change)="onSelect($event)">
+            <ngx-dropzone-label><img src="../../../assets/faces/face23.jpg" alt="">
+            </ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          </ngx-dropzone>
+        </span>
+          <span class="face_all">
+          <ngx-dropzone (change)="onSelect($event)">
+            <ngx-dropzone-label><img src="../../../assets/faces/face5.jpg" alt="">
+            </ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          </ngx-dropzone>
+        </span>
+        <span class="face_all">
+          <ngx-dropzone (change)="onSelect($event)">
+            <ngx-dropzone-label><img src="../../../assets/faces/face26.jpg" alt="">
+            </ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          </ngx-dropzone>
+        </span>
+        <span class="face_all">
+        <ngx-dropzone (change)="onSelect($event)">
+          <ngx-dropzone-label><img src="../../../assets/faces/face2.jpg" alt="">
+          </ngx-dropzone-label>
+          <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+          </ngx-dropzone-preview>
+        </ngx-dropzone>
+      </span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="second_div">
+      <mat-form-field>
+        <mat-label>Talent Category</mat-label>
+        <mat-select >
+          <mat-option value="1">Venezuela</mat-option>
+          <mat-option value="2">Serbia</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Name of Book</mat-label>
+        <mat-select >
+          <mat-option value="1">Caracas</mat-option>
+          <mat-option value="2">Belgrade</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Description"></textarea>
+      </mat-form-field>
+      <br>
+      <div id="checkbox">
+        <mat-checkbox>Privacy</mat-checkbox>
+        <br>
+        <p>This content will be only visible by your friends</p>
+      </div>
+      <br>
+      <div class="next_step_button">
+        <a>Skip</a>
+        <button mat-raised-button matStepperNext>Next Step</button>
+      </div>
+    </div>
+
+  </form>
+
+</div>

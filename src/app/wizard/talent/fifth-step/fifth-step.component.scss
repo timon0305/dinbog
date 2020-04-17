@@ -1,0 +1,48 @@
+#fifth_step {
+  text-align: center;
+}
+#fifth_step> h4 {
+  color: #1181C3;
+}
+#Album_Upload {
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  border: 3px solid darkgray;
+}
+#Album_Upload img {
+  width: 100px;
+}
+#Album_Upload>ngx-dropzone {
+  border: none!important;
+}
+#fifth_step>mat-card {
+  width: 60%;
+  margin: auto;
+}
+#album_image img {
+  width: 90px;
+}
+#album_image>ngx-dropzone {
+  border: none!important;
+  width: 160px;
+}
+#album_image {
+  border: 3px solid darkgray;
+}
+#track_url {
+  width: 100%;
+}
+#track_url > mat-form-field {
+  width: 90%;
+  margin: auto;
+}
+#fifth_step>mat-card>div>button {
+  border: 1px solid #1181C3;
+  color: #1181C3;
+}
+#fifth_step>mat-card>div>mat-form-field {
+  width: 95%;
+  margin: auto;
+  height: 90px;
+}

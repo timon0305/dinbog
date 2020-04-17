@@ -7,7 +7,6 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TalentComponent } from './wizard/talent/talent.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -32,15 +31,17 @@ import {MatTableModule} from '@angular/material/table';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {IonicModule} from '@ionic/angular';
 import { LandingComponent } from './landing/landing.component';
+import {WizardComponent} from './wizard/wizard.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TalentComponent,
-    HomeComponent,
     LandingComponent,
+    WizardComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,

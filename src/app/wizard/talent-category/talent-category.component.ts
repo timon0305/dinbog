@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-talent-category',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TalentCategoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _router: Router
+  ) { }
 
   ngOnInit(): void {
   }
-
+  category_done() {
+    this._router.navigate(['wizard/talent'])
+  }
 }

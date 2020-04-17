@@ -1,0 +1,46 @@
+#second_step {
+  text-align: center;
+}
+#dropzone-4>div>span>ngx-dropzone {
+  width: 300px;
+  display: inline-block;
+
+}
+#second_step>form>h2 {
+  color: #1181C3;
+}
+.face_all {
+  text-align: center;
+  width : 174px;
+  margin: auto;
+}
+#second_step>form>h2 {
+  margin-bottom: 10px!important;
+}
+.face_all>ngx-dropzone {
+  border: none!important;
+}
+
+.face_all img {
+  margin: 0!important;
+  height: 160px;
+  border: 3px solid darkgray;
+}
+#second_div {
+  width: 50%;
+  margin: auto;
+}
+#second_div>mat-form-field {
+  width: 100%;
+}
+#checkbox {
+  width: 100%;
+}
+#checkbox>mat-checkbox {
+  float: left;
+  margin-left: 15px;
+}
+#checkbox>p {
+  margin-left: 30px;
+  text-align: left;
+}

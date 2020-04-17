@@ -1,0 +1,33 @@
+<div id="forth_step">
+  <form [formGroup]="forthFormGroup">
+    <h4>Your First Work</h4>
+
+    <br><br>
+    <div id="work">
+      <mat-form-field class="example-full-width">
+        <mat-label>Work Type</mat-label>
+        <input matInput placeholder="Work Type">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>2020</mat-label>
+        <input matInput placeholder="2020">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Client</mat-label>
+        <input matInput placeholder="Client">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Description"></textarea>
+      </mat-form-field>
+    </div>
+    <br><br>
+    <div class="next_step_button">
+      <a>Skip</a>
+      <button mat-raised-button matStepperNext>Next Step</button>
+    </div>
+  </form>
+</div>

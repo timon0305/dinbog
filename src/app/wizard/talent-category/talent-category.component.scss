@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 #talent_category {
   text-align: center;
   width: 30%;
@@ -6,15 +7,31 @@
 }
 #category_checkbox_group>div {
   display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#category_checkbox_group>div>h4 {
+  margin-top: 5px;
 }
 #talent_category>h3 {
-  color: #1181C3;
+  color: #1181C3!important;
   margin: 7px;
 }
 #category_pre_tag {
   background: #e0e0e0;
   padding: 20px
 }
+#category_pre_tag>h3 {
+  color: #919191;
+  margin: 9px!important;
+}
 #category_title {
-  color: #1181C3;
+  color: #1181C3!important;
+}
+#talent_category>button {
+  color: white;
+  background-color: #1181C3;
+  padding: 0 56px 0 56px;
+  font-size: 16px;
 }

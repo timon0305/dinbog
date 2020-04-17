@@ -1,0 +1,69 @@
+<div id="third_step">
+  <form [formGroup]="thirdFormGroup">
+    <h4>Your First Video</h4>
+    <br>
+    <mat-tab-group mat-align-tabs="center">
+      <mat-tab label="Video URL">
+        <br><br>
+        <div id="Video_Upload_URL">
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="Description"></textarea>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Video URL</mat-label>
+            <input matInput placeholder="Video URL">
+          </mat-form-field>
+        </div>
+      </mat-tab>
+      <mat-tab disabled></mat-tab>
+      <mat-tab label="Upload Video">
+        <br>
+        <br>
+        <div id="Video_Upload">
+          <ngx-dropzone (change)="onSelect($event)">
+            <ngx-dropzone-label>
+              <img src="../../../../assets/img/video.jpg" alt="">
+            </ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+              <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          </ngx-dropzone>
+
+          <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+          </ngx-dropzone-image-preview>
+        </div>
+        <br>
+      </mat-tab>
+    </mat-tab-group>
+    <div id="checkbox_video">
+      <div>
+        <img src="../../../../assets/img/youtube.png" alt="">
+        <img src="../../../../assets/img/v.png">
+      </div>
+      <br><br>
+      <br>
+      <div>
+        <mat-checkbox>Privacy</mat-checkbox>
+      </div>
+      <div>
+        <p>This content will be only visible by your friends</p>
+      </div>
+      <br>
+    </div>
+    <br>
+
+    <br>
+    <div class="next_step_button" style="display: inline-block!important;">
+      <a>Skip</a>
+      <button mat-raised-button matStepperNext>Next Step</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,21 @@
+#talent_success>mat-card {
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+}
+#talent_success {
+  margin-top: 100px;
+}
+#talent_success>mat-card mat-icon {
+  color: #1181C3;
+  font-size: 60px;
+}
+#talent_success button {
+  background: #1181C3;
+  color: white;
+}
+#talent_success #verify_button {
+  border: 1px solid #1181C3!important;
+  color: #1181C3!important;
+  background-color: #fff;
+}

@@ -1,0 +1,135 @@
+<div id="first_step">
+  <form [formGroup]="firstFormGroup">
+    <h2>Personal Information</h2>
+    <div id="dropzone">
+      <ngx-dropzone (change)="onSelect($event)">
+        <ngx-dropzone-label><img src="../../../../assets/faces/face2.jpg" alt="">
+        </ngx-dropzone-label>
+        <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+          <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-preview>
+      </ngx-dropzone>
+
+      <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+      </ngx-dropzone-image-preview>
+    </div>
+    <br>
+    <img src="../../../../assets/img/vali_img.JPG" alt="">
+    <div class="first_step_form">
+      <mat-form-field>
+        <mat-label>Talent Category</mat-label>
+        <mat-select >
+          <mat-option value="1">Model</mat-option>
+          <mat-option value="2">Actor</mat-option>
+          <mat-option value="3">Doctor</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <div id="talent_button_group">
+        <button>Talent</button>
+        <button>Model</button>
+        <button>Doctor</button>
+      </div>
+    </div>
+    <br>
+
+    <div id="birthday">
+      <h4>BIRTH DATE</h4>
+      <mat-form-field>
+        <mat-label>Year</mat-label>
+        <mat-select formControlName="year" name="year">
+          <mat-option *ngFor="let year of years" [value]="year.value">
+            {{year.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Month</mat-label>
+        <mat-select formControlName="month" name="month">
+          <mat-option *ngFor="let month of months" [value]="month.value">
+            {{month.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Day</mat-label>
+        <mat-select formControlName="day" name="day">
+          <mat-option *ngFor="let day of days" [value]="day.value">
+            {{day.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br>
+
+    <div class="first_step_form">
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <mat-select >
+          <mat-option value="1">Man</mat-option>
+          <mat-option value="2">Woman</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br>
+
+    <div class="first_step_form">
+      <span>Agency or Manager</span>
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+    <br>
+    <br><br>
+    <div class="first_step_form">
+      <span>Where are you from?</span><br>
+      <mat-form-field>
+        <mat-label>Select Country</mat-label>
+        <mat-select >
+          <mat-option value="1">Venezuela</mat-option>
+          <mat-option value="2">Serbia</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Select City</mat-label>
+        <mat-select >
+          <mat-option value="1">Caracas</mat-option>
+          <mat-option value="2">Belgrade</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br>
+
+    <div class="first_step_form">
+      <span>Where do you live?</span><br>
+      <mat-form-field>
+        <mat-label>Select Country</mat-label>
+        <mat-select >
+          <mat-option value="1">Venezuela</mat-option>
+          <mat-option value="2">Serbia</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Select City</mat-label>
+        <mat-select >
+          <mat-option value="1">Caracas</mat-option>
+          <mat-option value="2">Belgrade</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="+12 " value="">
+      </mat-form-field>
+    </div>
+
+    <br>
+    <div class="next_step_button">
+      <button mat-raised-button matStepperNext>Next Step</button>
+    </div>
+  </form>
+
+</div>

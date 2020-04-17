@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WizardComponent } from './wizard.component';
 import {RouterModule} from '@angular/router';
@@ -23,18 +23,38 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgxDropzoneModule} from 'ngx-dropzone';
 import {MdePopoverModule} from '@material-extended/mde';
 import {IonicModule} from '@ionic/angular';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {Ng5SliderModule} from 'ng5-slider';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { SignVerifyComponent } from './sign-verify/sign-verify.component';
 import {TalentCategoryComponent} from './talent-category/talent-category.component';
+import { FirstStepComponent } from './talent/first-step/first-step.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { SecondStepComponent } from './talent/second-step/second-step.component';
+import { ThirdStepComponent } from './talent/third-step/third-step.component';
+import { ForthStepComponent } from './talent/forth-step/forth-step.component';
+import { FifthStepComponent } from './talent/fifth-step/fifth-step.component';
+import { SuccessTalentComponent } from './success-talent/success-talent.component';
 
 
 @NgModule({
-  declarations: [WizardComponent, SignUpComponent, SignVerifyComponent],
+  declarations: [
+    SignUpComponent,
+    SignVerifyComponent,
+    TalentCategoryComponent,
+    TalentComponent,
+    FirstStepComponent,
+    SecondStepComponent,
+    ThirdStepComponent,
+    ForthStepComponent,
+    FifthStepComponent,
+    SuccessTalentComponent,
+  ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     IonicModule,
     FormsModule,
     ScrollingModule,
@@ -42,11 +62,14 @@ import {TalentCategoryComponent} from './talent-category/talent-category.compone
     FlexLayoutModule,
 
     MatFormFieldModule,
+    MatCheckboxModule,
+    MatStepperModule,
     MatMenuModule,
     MatIconModule,
     MatCardModule,
     MatButtonModule,
     MatTableModule,
+    MatSlideToggleModule,
     MatSelectModule,
     MatInputModule,
     MatRadioModule,
@@ -58,7 +81,6 @@ import {TalentCategoryComponent} from './talent-category/talent-category.compone
     FontAwesomeModule,
     NgxDropzoneModule,
     MdePopoverModule,
-    MatCheckboxModule,
 
     RouterModule.forChild([
       {
@@ -76,14 +98,21 @@ import {TalentCategoryComponent} from './talent-category/talent-category.compone
           {
             path: 'category',
             component: TalentCategoryComponent
+          },
+          {
+            path: 'talent',
+            component: TalentComponent
+          },
+          {
+            path: 'success-talent',
+            component: SuccessTalentComponent
           }
         ]
       },
-      {
-        path: 'talent',
-        component: TalentComponent
-      }
     ])
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class WizardModule { }

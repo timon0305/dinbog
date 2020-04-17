@@ -14,14 +14,17 @@ mat-step-header {
 p, h1,h2,h3,h4,h5,h6 {
   font-family: Roboto-Regular!important;
 }
+mat-horizontal-stepper {
+  background: transparent!important;
+}
 .mat-horizontal-stepper-header-container {
   width: 80%;
   margin: auto;
 }
-img {
-  height: 59px;
-  margin-top: 20px;
+ngx-dropzone {
+  background: transparent!important;
 }
+
 .mat-form-field {
   margin-top: 16px;
 }
@@ -34,9 +37,6 @@ button {
   width: 80%;
   margin: auto;
   text-align: center;
-}
-h2 {
-  color: #1181C3;
 }
 
 button {
@@ -61,25 +61,8 @@ button {
 #dropzone>ngx-dropzone {
   border: none!important;
 }
-.face_all {
-  text-align: center;
-  width : 174px;
-  margin: auto;
-}
-.face_all>ngx-dropzone {
-  border: none!important;
-}
 
-.face_all img {
-  margin: 0!important;
-  height: 140px;
-}
-.face_all>ngx-dropzone {
-}
-#checkbox_video p {
-  color: gray;
-  margin-left: 20px;
-}
+
 #birthday_name {
   margin-right: 20px;
   font-size: 18px;
@@ -98,81 +81,11 @@ mat-form-field {
   margin-left: 18%;
 }
 
-#gender>mat-form-field {
-  width: 48%;
-}
-#category>mat-form-field {
-  width: 48%;
-}
-
-#homeTown>mat-form-field {
-  width: 48%;
-}
-#category button {
-  border-radius: 20px 20px 20px 20px;
-}
-
-#homeTown>span {
-  width: 62%;
-  font-size: 18px;
-  color: #1181C3;
-  float: left;
-}
-
-#Address>mat-form-field {
-  width: 48%;
-}
-
-#Address>span {
-  width: 62%;
-  font-size: 18px;
-  color: #1181C3;
-  float: left;
-}
-
-#dropzone-4>div>span>ngx-dropzone {
-  width: 250px;
-  display: inline-block;
-
-}
-#Talent>mat-form-field {
-  width: 48%;
-}
-
-#Talent>span {
-  width: 62%;
-  font-size: 18px;
-  color: #1181C3;
-  float: left;
-}
-#checkbox {
-  width: 57%;
-}
-#checkbox p {
-  width: 140%;
-}
-
 a {
   color: #1181C3;
   cursor: pointer;
 }
 
-#Video_Upload_URL>mat-form-field {
-  width: 92%;
-}
-.next_step_button {
-  background: #1181C3!important;
-  color: #ffffff!important;
-  margin: 0 20px 0 20px!important;
-}
-
-
-#Video_Upload_URL>span {
-  width: 100%;
-  font-size: 18px;
-  color: #1181C3;
-  float: left;
-}
 
 .mat-tab-label-content {
   color: #1181C3;
@@ -185,18 +98,6 @@ div>img {
   margin-right: 20px;
   height: 35px;
 }
-#checkbox_video
-{
-  width: 70%;
-}
-
-#checkbox_video p {
-  width: 120%;
-}
-
-#work>mat-form-field {
-  width: 60%;
-}
 
 #work>span {
   width: 60%;
@@ -205,14 +106,7 @@ div>img {
   float: left;
 }
 
-#Album_Upload {
-  width: 250px;
-  text-align: center;
-  margin: auto;
-}
-#mini_upload_image {
-  width: 175px!important;
-}
+
 mat-icon {
   color: #1181C3;
   font-size: 40px;
