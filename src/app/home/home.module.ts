@@ -75,6 +75,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ProfileLocationComponent } from './profile/profile-location/profile-location.component';
 import {GoogleMapsModule} from '@angular/google-maps';
 import { ProfileMainComponent } from './profile/profile-main/profile-main.component';
+import { ProfileBusinessPagesComponent } from './profile/profile-business-pages/profile-business-pages.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { ProfileMainComponent } from './profile/profile-main/profile-main.compon
     ProfileComponent,
     ProfileInfoComponent,
     ProfileLocationComponent,
-    ProfileMainComponent
+    ProfileMainComponent,
+    ProfileBusinessPagesComponent
 
 
   ],
