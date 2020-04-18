@@ -1,0 +1,236 @@
+<div id="profile_main">
+  <mat-card>
+    <div id="dropzone-landscape">
+      <ngx-dropzone (change)="onSelect($event)">
+        <ngx-dropzone-label>
+          <img src="../../../../assets/img/landscape.jpg" alt="">
+          <ion-icon name="camera-outline"></ion-icon>
+          </ngx-dropzone-label>
+        <ngx-dropzone-preview *ngFor="let f of files1" [removable]="true" (removed)="onRemove(f)">
+          <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-preview>
+      </ngx-dropzone>
+    </div>
+    <div id="dropzone-profile">
+      <ngx-dropzone (change)="onSelect($event)">
+        <ngx-dropzone-label>
+          <img src="../../../../assets/avatar/avatar.jpg" alt="">
+          <ion-icon name="camera-outline"></ion-icon>
+        </ngx-dropzone-label>
+        <ngx-dropzone-preview *ngFor="let f of files2" [removable]="true" (removed)="onRemove(f)">
+          <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-preview>
+      </ngx-dropzone>
+    </div>
+    <div id="profile_name">
+      <h3>Anna Cavannachi
+        &nbsp; <mat-checkbox></mat-checkbox> &nbsp;
+        <ion-icon name="pencil-outline"></ion-icon>
+      </h3>
+      <span>Model &nbsp; Singer &nbsp; Dancer &nbsp; Actor</span><br>
+      <span>Agency/Manager: Prestige Models</span><br>
+      <span>
+        <img src="https://www.countryflags.io/ve/flat/64.png">
+        Venezuela, Caracas
+      </span>
+    </div>
+    <br>
+    <div id="personal_view">
+      <div class="mini_style">
+        <div>
+          <span class="profile_left">languages</span>
+          <span class="profile_right">Esp Ing Frc</span>
+        </div>
+        <div>
+          <span class="profile_left">Gender</span>
+          <span class="profile_right">Female</span>
+        </div>
+        <div>
+          <span class="profile_left">Birth Date</span>
+          <span class="profile_right">18-5-1995</span>
+        </div>
+        <div>
+          <span class="profile_left">Age</span>
+          <span class="profile_right">23</span>
+        </div>
+      </div>
+      <div class="mini_style">
+        <div>
+          <span class="profile_left">Height</span>
+          <span class="profile_right">1.90</span>
+        </div>
+        <div>
+          <span class="profile_left">Ethnicity</span>
+          <span class="profile_right">Caucasico</span>
+        </div>
+        <div>
+          <span class="profile_left">Eyes</span>
+          <span class="profile_right">Brown</span>
+        </div>
+        <div>
+          <span class="profile_left">Hair</span>
+          <span class="profile_right">light Chesnut</span>
+        </div>
+      </div>
+      <div class="mini_style">
+        <div>
+          <span class="profile_left">Hair Length</span>
+          <span class="profile_right">Long</span>
+        </div>
+        <div>
+          <span class="profile_left">Hair Texture</span>
+          <span class="profile_right">Smooth</span>
+        </div>
+        <div>
+          <span class="profile_left">Weight</span>
+          <span class="profile_right">52kg</span>
+        </div>
+        <div>
+          <span class="profile_left">Breast</span>
+          <span class="profile_right">87cm</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span class="profile_left">Waist</span>
+          <span class="profile_right">64cm</span>
+        </div>
+        <div>
+          <span class="profile_left">Hip</span>
+          <span class="profile_right">80cm</span>
+        </div>
+        <div>
+          <span class="profile_left">Shoes</span>
+          <span class="profile_right">8 USA</span>
+        </div>
+        <div>
+          <span class="profile_left">Dress</span>
+          <span class="profile_right">5 USA</span>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="profile_image_icon">
+      <div>
+        <div>
+          <span>
+            <ion-icon name="calculator-outline"></ion-icon>
+          </span>
+            <span>
+            Manager / Agency
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="airplane-outline"></ion-icon>
+          </span>
+            <span>
+            Willing to Travel
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="person-add-outline"></ion-icon>
+          </span>
+            <span>
+            Looking for a rep.
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="flame-outline"></ion-icon>
+          </span>
+            <span>
+            I am a Busker
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+           <ion-icon name="people-outline"></ion-icon>
+          </span>
+            <span>
+            Albino
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="ribbon-outline"></ion-icon>
+          </span>
+            <span>
+            Androgynous
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="woman-outline"></ion-icon>
+          </span>
+            <span>
+            Vitilligo
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="hand-left-outline"></ion-icon>
+          </span>
+            <span>
+            Ink Model
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="headset-outline"></ion-icon>
+          </span>
+            <span>
+            Body Modifictio
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="man-outline"></ion-icon>
+          </span>
+            <span>
+            Physical Disability
+          </span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+            <span>
+            Intellectual Disability
+          </span>
+        </div>
+      </div>
+    </div>
+    <br>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          <p>show more</p>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p></p>
+    </mat-expansion-panel>
+  </mat-card>
+</div>

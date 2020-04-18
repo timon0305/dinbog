@@ -13,7 +13,10 @@ export class SecondStepComponent implements OnInit {
     private _formBuilder: FormBuilder,
   ) { }
 
-  files: File[] = [];
+  files1: File[] = [];
+  files2: File[] = [];
+  files3: File[] = [];
+  files4: File[] = [];
   secondFormGroup: FormGroup;
   ngOnInit(): void {
     this.secondFormGroup = this._formBuilder.group({
@@ -22,12 +25,37 @@ export class SecondStepComponent implements OnInit {
   }
   onSelect(event) {
     console.log(event);
-    this.files.push(...event.addedFiles);
+    this.files1.push(...event.addedFiles);
   }
-
   onRemove(event) {
     console.log(event);
-    this.files.splice(this.files.indexOf(event), 1);
+    this.files1.splice(this.files1.indexOf(event), 1);
   }
 
+  onSelect(event) {
+    console.log(event);
+    this.files2.push(...event.addedFiles);
+  }
+  onRemove(event) {
+    console.log(event);
+    this.files2.splice(this.files2.indexOf(event), 1);
+  }
+
+  onSelect(event) {
+    console.log(event);
+    this.files3.push(...event.addedFiles);
+  }
+  onRemove(event) {
+    console.log(event);
+    this.files3.splice(this.files3.indexOf(event), 1);
+  }
+
+  onSelect(event) {
+    console.log(event);
+    this.files4.push(...event.addedFiles);
+  }
+  onRemove(event) {
+    console.log(event);
+    this.files4.splice(this.files4.indexOf(event), 1);
+  }
 }

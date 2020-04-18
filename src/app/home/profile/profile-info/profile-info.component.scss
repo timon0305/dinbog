@@ -1,0 +1,18 @@
+.progress_side {
+  float: right;
+  width: 70%;
+  margin-top: 2px;
+}
+.progress_side mat-progress-bar {
+  height: 17px!important;
+  border-radius: 10px!important;
+}
+.mat-progress-bar-fill::after {
+  background-color: #1181C3!important;
+}
+.progress_circle {
+  border-radius: 50%;
+  border: 1px solid darkgray;
+  padding-left: 5px;
+  padding-right: 5px;
+}

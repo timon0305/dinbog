@@ -7,36 +7,36 @@
       <div>
         <span class="face_all">
           <ngx-dropzone (change)="onSelect($event)">
-            <ngx-dropzone-label><img src="../../../assets/faces/face23.jpg" alt="">
+            <ngx-dropzone-label><img src="../../../../assets/faces/face23.jpg" alt="">
             </ngx-dropzone-label>
-            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+            <ngx-dropzone-preview *ngFor="let f of files1" [removable]="true" (removed)="onRemove(f)">
               <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-preview>
           </ngx-dropzone>
         </span>
           <span class="face_all">
           <ngx-dropzone (change)="onSelect($event)">
-            <ngx-dropzone-label><img src="../../../assets/faces/face5.jpg" alt="">
+            <ngx-dropzone-label><img src="../../../../assets/faces/face5.jpg" alt="">
             </ngx-dropzone-label>
-            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+            <ngx-dropzone-preview *ngFor="let f of files2" [removable]="true" (removed)="onRemove(f)">
               <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-preview>
           </ngx-dropzone>
         </span>
         <span class="face_all">
           <ngx-dropzone (change)="onSelect($event)">
-            <ngx-dropzone-label><img src="../../../assets/faces/face26.jpg" alt="">
+            <ngx-dropzone-label><img src="../../../../assets/faces/face26.jpg" alt="">
             </ngx-dropzone-label>
-            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+            <ngx-dropzone-preview *ngFor="let f of files3" [removable]="true" (removed)="onRemove(f)">
               <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-preview>
           </ngx-dropzone>
         </span>
         <span class="face_all">
         <ngx-dropzone (change)="onSelect($event)">
-          <ngx-dropzone-label><img src="../../../assets/faces/face2.jpg" alt="">
+          <ngx-dropzone-label><img src="../../../../assets/faces/face2.jpg" alt="">
           </ngx-dropzone-label>
-          <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+          <ngx-dropzone-preview *ngFor="let f of files4" [removable]="true" (removed)="onRemove(f)">
             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
           </ngx-dropzone-preview>
         </ngx-dropzone>

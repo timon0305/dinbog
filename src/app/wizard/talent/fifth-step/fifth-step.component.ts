@@ -12,18 +12,28 @@ export class FifthStepComponent implements OnInit {
   constructor(
     private _router: Router
   ) { }
-  files: File[] = [];
+  files1: File[] = [];
+  files2: File[] = [];
   ngOnInit(): void {
   }
 
   onSelect(event) {
     console.log(event);
-    this.files.push(...event.addedFiles);
+    this.files1.push(...event.addedFiles);
+  }
+  onRemove(event) {
+    console.log(event);
+    this.files1.splice(this.files1.indexOf(event), 1);
+  }
+
+  onSelect(event) {
+    console.log(event);
+    this.files2.push(...event.addedFiles);
   }
 
   onRemove(event) {
     console.log(event);
-    this.files.splice(this.files.indexOf(event), 1);
+    this.files2.splice(this.files2.indexOf(event), 1);
   }
 
   talent_Success() {

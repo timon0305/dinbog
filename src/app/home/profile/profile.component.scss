@@ -1,0 +1,49 @@
+
+@media (min-width: 1200px) {
+  .profile_side_bar {
+    width: 18.75%;
+    margin: 0 5px 0 10px;
+    display: block;
+  }
+  .profile_main {
+    width: 81%;
+    margin: 0 10px 0 10px;
+    display: block;
+  }
+  #profile {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile_side_bar {
+    width: 30%;
+    margin: 0 10px 0 10px;
+    display: block;
+  }
+  .profile_main {
+    width: 70%;
+    margin: 0 10px 0 10px;
+    display: block;
+  }
+  #profile {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+@media (max-width: 786px) {
+  .profile_side_bar {
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
+  .profile_main {
+    width: 100%;
+    display: block;
+  }
+  #profile {
+    display: block;
+    width: 100%;
+  }
+}

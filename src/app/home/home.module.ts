@@ -70,6 +70,11 @@ import {HttpClient} from '@angular/common/http';
 import {httpTranslateLoader} from '../app.module';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileInfoComponent } from './profile/profile-info/profile-info.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ProfileLocationComponent } from './profile/profile-location/profile-location.component';
+import {GoogleMapsModule} from '@angular/google-maps';
+import { ProfileMainComponent } from './profile/profile-main/profile-main.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +110,9 @@ import { ProfileComponent } from './profile/profile.component';
     SendMessageComponent,
     ChatGroupComponent,
     ProfileComponent,
+    ProfileInfoComponent,
+    ProfileLocationComponent,
+    ProfileMainComponent
 
 
   ],
@@ -135,7 +143,8 @@ import { ProfileComponent } from './profile/profile.component';
     FontAwesomeModule,
     NgxDropzoneModule,
     MdePopoverModule,
-
+    MatProgressBarModule,
+    GoogleMapsModule,
     RouterModule.forChild([
       {
         path: '',

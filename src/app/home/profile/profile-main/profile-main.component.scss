@@ -1,0 +1,93 @@
+#profile_main {
+  text-align: center;
+}
+#profile_main>mat-card {
+  padding: 0!important;
+}
+#profile_main>mat-card ngx-dropzone {
+  border: none!important;
+}
+#dropzone-landscape ngx-dropzone img {
+  width: 100%;
+  height: 150px!important;
+}
+#dropzone-landscape ngx-dropzone ion-icon {
+  position: absolute;
+  right: 13px;
+  top: 120px;
+  border: 1px solid;
+  font-size: 37px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+#dropzone-profile {
+  margin-top: -100px;
+}
+#dropzone-profile img {
+  border-radius: 50%;
+}
+#dropzone-profile ion-icon {
+  position: absolute;
+  right: 48%;
+  top: 200px;
+  font-size: 30px;
+}
+#profile_name > h3 {
+  margin: 0;
+}
+#profile_name >h3 .mat-checkbox-frame {
+  border-radius: 50%!important;
+}
+#profile_name > span {
+  font-size: 14px;
+  margin: 10px 0 10px 0;
+}
+#profile_name > span > img {
+  width: 20px;
+  height: 15px;
+}
+#personal_view {
+  display: flex;
+  width: 98%;
+  margin: auto;
+}
+#personal_view>div {
+  width: 25%;
+  display: grid;
+  margin-left: 10px;
+}
+#personal_view>div>div>.profile_left {
+  float: left;
+  color: darkgray;
+}
+#personal_view>div>div>.profile_right {
+  float: right;
+}
+.mini_style {
+  border-right: 1px solid darkgray;
+  padding-right: 10px;
+}
+.profile_image_icon {
+  width: 98%;
+  margin: auto;
+}
+.profile_image_icon>div {
+  display: inline-block;
+  width: 120px;
+}
+.profile_image_icon>div>div {
+  display: grid;
+}
+.profile_image_icon>div>div>span>ion-icon {
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+}
+#profile_main mat-expansion-panel {
+  box-shadow: none!important;
+}
+#profile_main mat-panel-description p {
+  text-align: center;
+  color: #1181C3;
+}
