@@ -193,7 +193,7 @@
          </li>
          <li>
            <a>
-             <span>
+             <span style="margin-left: -30px;">
                 <select #selectedLang (change)="switchLang(selectedLang.value)">
                   <option *ngFor="let language of translate.getLangs()"
                           [value]="language" [selected]="language === translate.currentLang"

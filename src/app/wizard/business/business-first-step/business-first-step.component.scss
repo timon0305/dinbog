@@ -1,0 +1,23 @@
+#business_first_step {
+  text-align: center;
+  margin-top: 20px;
+}
+#business_first_step>h4 {
+  color: #1181C3;
+}
+#business_category {
+  display: flow-root;
+}
+#business_category>div {
+  padding: 20px;
+  display: inline-block;
+  float: left;
+}
+#business_category>div>img {
+  width: 240px;
+  height: 240px;
+}
+#business_first_step>div>button {
+  background: #1181C3;
+  color: #ffffff;
+}

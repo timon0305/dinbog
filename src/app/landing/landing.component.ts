@@ -16,13 +16,14 @@ export class LandingComponent implements OnInit {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
   }
-  switchLang(lang: string) {
-    this.translate.use(lang)
-  }
 
   ngOnInit(): void {
   }
+
   sign_up() {
     this._router.navigate(['wizard/sign_up'])
+  }
+  business_sign() {
+    this._router.navigate(['wizard/business'])
   }
 }

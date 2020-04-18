@@ -37,6 +37,12 @@ import { ThirdStepComponent } from './talent/third-step/third-step.component';
 import { ForthStepComponent } from './talent/forth-step/forth-step.component';
 import { FifthStepComponent } from './talent/fifth-step/fifth-step.component';
 import { SuccessTalentComponent } from './success-talent/success-talent.component';
+import { BusinessComponent } from './business/business.component';
+import { BusinessFirstStepComponent } from './business/business-first-step/business-first-step.component';
+import { BusinessSecondStepComponent } from './business/business-second-step/business-second-step.component';
+import { BusinessThirdStepComponent } from './business/business-third-step/business-third-step.component';
+import {NgxMatSelectSearchModule} from 'ngx-mat-select-search';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 @NgModule({
@@ -51,6 +57,10 @@ import { SuccessTalentComponent } from './success-talent/success-talent.componen
     ForthStepComponent,
     FifthStepComponent,
     SuccessTalentComponent,
+    BusinessComponent,
+    BusinessFirstStepComponent,
+    BusinessSecondStepComponent,
+    BusinessThirdStepComponent,
   ],
   imports: [
     CommonModule,
@@ -81,6 +91,8 @@ import { SuccessTalentComponent } from './success-talent/success-talent.componen
     FontAwesomeModule,
     NgxDropzoneModule,
     MdePopoverModule,
+    NgxMatSelectSearchModule,
+    MatAutocompleteModule,
 
     RouterModule.forChild([
       {
@@ -106,6 +118,10 @@ import { SuccessTalentComponent } from './success-talent/success-talent.componen
           {
             path: 'success-talent',
             component: SuccessTalentComponent
+          },
+          {
+            path: 'business',
+            component: BusinessComponent,
           }
         ]
       },

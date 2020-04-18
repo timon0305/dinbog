@@ -1,0 +1,27 @@
+#business_sign_up {
+  background: transparent;
+  width: 80%;
+  margin: auto;
+}
+#business_sign_up>mat-horizontal-stepper {
+  background: transparent!important;
+}
+#business_sign_up .mat-step-icon {
+  height: 61px!important;
+  width: 61px!important;
+  margin-top: -20px!important;
+}
+#business_sign_up mat-step-header {
+  background: transparent!important;
+}
+.business_done {
+  margin-top: 300px;
+}
+.business_done >button {
+  color: #1181C3;
+  border: 1px solid darkgray;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: 40px;
+}
+

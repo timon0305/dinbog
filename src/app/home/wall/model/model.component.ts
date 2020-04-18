@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 
 
@@ -11,7 +12,9 @@ export class ModelComponent implements OnInit {
 
   public ELEMENT_DATA = [];
 
- constructor() { }
+ constructor(
+   private _router: Router
+ ) { }
 
   ngOnInit(): void {
     this.ELEMENT_DATA = [
@@ -23,5 +26,8 @@ export class ModelComponent implements OnInit {
     ]
   }
 
+  profile_view() {
+   this._router.navigate(['home/profile'])
+  }
 }
 

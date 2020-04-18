@@ -1,0 +1,36 @@
+#business_second_step {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+#business_second_step>h4 {
+  color: #1181C3;
+}
+#business_upload_image {
+  width: 250px;
+  margin: auto;
+  box-shadow: 1px 2px 0 2px darkgrey;
+}
+#business_upload_image ngx-dropzone img {
+  width: 100px;
+  height: 100px;
+}
+#business_upload_image ngx-dropzone {
+  border: none!important;
+}
+.business_second_form>mat-form-field {
+  width: 100%;
+}
+.business_second_form>mat-form-field mat-icon {
+  float: right!important;
+  color: #1181C3!important;
+}
+.business_second_form>mat-form-field textarea {
+  height: 130px!important;
+}
+#business_second_step>.next_step_button button {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #1181C3;
+  color: white;
+}

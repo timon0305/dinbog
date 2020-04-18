@@ -1,0 +1,30 @@
+<div id="business_third_step">
+  <h4>Select Administrators</h4>
+  <br>
+  <div id="business_manager">
+    <div id="administrator">
+      <button mat-button  (ngSubmit)="onFormSubmit()"><mat-icon>add</mat-icon> &nbsp; Administrator</button>
+      <!--<form [formGroup]="bookForm" class="book-form">-->
+        <!--<mat-form-field class="select-book">-->
+          <!--<input type="text" placeholder="Administrator" matInput formControlName="book" [matAutocomplete]="auto">-->
+          <!--<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">-->
+            <!--<mat-option *ngFor="let book of $filteredBooks | async" [value]="book">-->
+              <!--{{book.name}}-->
+            <!--</mat-option>-->
+          <!--</mat-autocomplete>-->
+          <!--<mat-error *ngIf="book.hasError('required')">-->
+            <!--Book required.-->
+          <!--</mat-error>-->
+        <!--</mat-form-field>-->
+        <!--<br/>-->
+      <!--</form>-->
+    </div>
+    <div id="admin_edit">
+      <button mat-button><mat-icon>add</mat-icon> &nbsp; Edit</button>
+    </div>
+  </div>
+  <div class="business_done">
+    <a>Skip</a>
+    <button mat-raised-button matStepperNext >Done</button>
+  </div>
+</div>

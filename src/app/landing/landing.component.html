@@ -11,19 +11,6 @@
             <a><span id="login">Login</span>
             </a>
           </li>
-          <li>
-            <a>
-              <span>
-                <select #selectedLang (change)="switchLang(selectedLang.value)">
-                  <option *ngFor="let language of translate.getLangs()"
-                    [value]="language" [selected]="language === translate.currentLang"
-                  >
-                    {{language}}
-                  </option>
-                </select>
-              </span>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
@@ -49,7 +36,7 @@
         <div style="text-align: center">
           <div  id="company"></div>
           <br>
-          <button mat-button id="company_button">Company</button>
+          <button mat-button id="company_button" (click)="business_sign()">Company</button>
         </div>
       </div>
     </div>

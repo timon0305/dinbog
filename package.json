@@ -39,6 +39,7 @@
     "ng5-slider": "^1.2.4",
     "ngx-dropzone": "^2.2.2",
     "ngx-image-drawing": "^1.2.4",
+    "ngx-mat-select-search": "^2.1.2",
     "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

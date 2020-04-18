@@ -69,6 +69,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
 import {httpTranslateLoader} from '../app.module';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
     SendInvitationComponent,
     SendMessageComponent,
     ChatGroupComponent,
+    ProfileComponent,
 
 
   ],
@@ -166,6 +168,10 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
           {
             path: 'chat',
             component: ChatComponent
+          },
+          {
+            path: 'profile',
+            component: ProfileComponent
           }
         ],
       },

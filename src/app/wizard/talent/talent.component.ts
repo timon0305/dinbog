@@ -18,8 +18,6 @@ export class TalentComponent implements OnInit {
   thirdFormGroup: FormGroup;
   forthFormGroup: FormGroup;
 
-
-
   constructor(
     public dialog: MatDialog,
   ) { }

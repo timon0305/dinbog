@@ -1,0 +1,45 @@
+#business_third_step {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#business_third_step>h4 {
+  color: #1181C3;
+
+}
+.book-form {
+  max-width: 300px;
+  width: 100%;
+}
+.select-book {
+  width: 100%;
+}
+#business_manager {
+  display: flex;
+  margin: auto;
+  padding-top: 50px;
+}
+#administrator {
+  width: 50%;
+}
+#administrator > button {
+  width: 80%;
+  margin: auto;
+  background: #1181C3;
+  color: #ffffff;
+}
+#administrator > button mat-icon {
+  color: white;
+}
+#admin_edit {
+  width: 50%;
+}
+#admin_edit > button {
+  width: 80%;
+  margin: auto;
+  background: #1181C3;
+  color: white;
+}
+#admin_edit > button mat-icon {
+  color: white;
+}

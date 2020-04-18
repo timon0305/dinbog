@@ -1,0 +1,18 @@
+<div id="business_first_step">
+  <h4>Select Category</h4>
+  <br>
+  <div id="business_category">
+    <div *ngFor="let item of category" >
+      <img src="../../../../assets/avatars/{{item.image}}"
+
+      >
+      <br>
+      <p>{{item.name}}</p>
+    </div>
+    <br>
+  </div>
+  <br>
+  <div>
+    <button mat-raised-button matStepperNext>Next Step</button>
+  </div>
+</div>

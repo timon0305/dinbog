@@ -1,0 +1,15 @@
+<div id="business_sign_up">
+  <br>
+  <br>
+  <mat-horizontal-stepper labelPosition="bottom" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <app-business-first-step></app-business-first-step>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <app-business-second-step></app-business-second-step>
+    </mat-step>
+    <mat-step>
+      <app-business-third-step></app-business-third-step>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

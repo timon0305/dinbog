@@ -1,0 +1,73 @@
+<div id="business_second_step">
+  <h4>Register Information</h4><br>
+  <div id="business_upload_image">
+    <ngx-dropzone (change)="onSelect($event)">
+      <ngx-dropzone-label>
+        <img src="../../../../assets/img/upload.png" alt="">
+        <br> Upload Album Cover</ngx-dropzone-label>
+      <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+      </ngx-dropzone-preview>
+    </ngx-dropzone>
+  </div>
+  <br><br><br>
+  <div class="business_second_form">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Movies Business Page</mat-label>
+      <input matInput placeholder="Movies Business Page" >
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Top Mpdels US</mat-label>
+      <input matInput placeholder="Top Mpdels US" >
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>United States of America</mat-label>
+      <mat-select >
+        <mat-option value="1">Venezuela</mat-option>
+        <mat-option value="2">Serbia</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>New York</mat-label>
+      <mat-select >
+        <mat-option value="1">Caracas</mat-option>
+        <mat-option value="2">Belgrade</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Branches</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option value="Caracas">Caracas</mat-option>
+        <mat-option value="Belgrade">Belgrade</mat-option>
+        <mat-option value="Austria">Austria</mat-option>
+        <mat-option value="Bahrain">Bahrain</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>{{selected}}</mat-label>
+      <input matInput placeholder="{{selected}}">
+      <mat-icon>close</mat-icon>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Phone number</mat-label>
+      <input matInput placeholder="Phone number">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Description"></textarea>
+    </mat-form-field>
+  </div>
+  <div class="next_step_button">
+    <button mat-raised-button matStepperNext>Done</button>
+  </div>
+</div>
